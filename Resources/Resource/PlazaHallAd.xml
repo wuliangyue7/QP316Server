@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout inset="4,48,0,13" width="211">
+		<HorizontalLayout width="194"  height="26" bkimage="file='PLAZA_HALL_AD\LABEL_TITLE_AFFICHE.png' " >
+
+		</HorizontalLayout>
+		<HorizontalLayout width="194" bkcolor="#FF000000">
+			<WkeBrowser name="WebBrowserNotice" bkcolor="#00000000" />
+		</HorizontalLayout>	
+		<HorizontalLayout width="194"  height="26" bkimage="file='PLAZA_HALL_AD\LABEL_TITLE_RICH_RANK.png' " >
+
+		</HorizontalLayout>	
+		<HorizontalLayout width="194"  height="224" bkcolor="#FF000000"  >
+			<WkeBrowser name="WebBrowserUserRank" bkcolor="#00000000" width="194"  height="224" />
+		</HorizontalLayout>						
+		<HorizontalLayout width="194"  height="120" bkcolor="#FF000000"  >
+			<WkeBrowser name="WebBrowserBottomAd" bkcolor="#00000000" />
+		</HorizontalLayout>						
+	</VerticalLayout>	
+</Window>

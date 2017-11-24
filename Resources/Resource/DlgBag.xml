@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="720,470" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_720_470.png' "> 
+		<HorizontalLayout height="30"> 
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_MY_BAG.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Container>
+			<VerticalLayout inset="12,8,12,0">
+				<Control height="44" bkimage="file='COMM_WIDGET\OPTION_LAYOUT_BACK.png'  corner='20,20,20,15'" />
+			</VerticalLayout>
+			<VerticalLayout >	
+				<Control height="15"/>
+				<HorizontalLayout height="41" childpadding="5" inset="20,0,20,0" > 
+					<Option  group="GroupBag" bindtablayoutname="TabLayoutBag" bindtabindex="0" text="全部"  height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' " selected="true"/>
+					<Option  group="GroupBag" bindtablayoutname="TabLayoutBag" bindtabindex="1" text="宝石"  height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' "/>
+					<Option  group="GroupBag" bindtablayoutname="TabLayoutBag" bindtabindex="2" text="卡片"  height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' "/>
+					<Option  group="GroupBag" bindtablayoutname="TabLayoutBag" bindtabindex="3" text="道具"  height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' "/>
+					<Option  group="GroupBag" bindtablayoutname="TabLayoutBag" bindtabindex="4" text="礼物"  height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' "/>
+				</HorizontalLayout>	
+				<HorizontalLayout >
+					<Control width="20"/>
+					<TabLayout name="TabLayoutBag" selectedid="0" >
+						<HorizontalLayout>
+							<Control width="682" height="264" bkimage="file='DLG_BOX_BAG\BACK_DASHED.png'" />
+							<PageLayout name="PageLayoutAllProperty" float="true" width="682" height="294"  itemsize="84,88" pagebar="true" inset="0,0,0,30"  pagebarstyle="PageBar">	
+								<Include count="29" source="DlgBagItem.xml"/>
+							</PageLayout>
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<Control width="682" height="264" bkimage="file='DLG_BOX_BAG\BACK_DASHED.png'" />
+							<PageLayout name="PageLayoutGemProperty" float="true" width="682" height="294"  itemsize="84,88" pagebar="true" inset="0,0,0,30"  pagebarstyle="PageBar">	
+								<Include count="39" source="DlgBagItem.xml"/>
+							</PageLayout>
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<Control width="682" height="264" bkimage="file='DLG_BOX_BAG\BACK_DASHED.png'" />
+							<PageLayout name="PageLayoutCardProperty" float="true" width="682" height="294"  itemsize="84,88" pagebar="true" inset="0,0,0,30"  pagebarstyle="PageBar">	
+								<Include count="15" source="DlgBagItem.xml"/>
+							</PageLayout>
+						</HorizontalLayout>	
+						<HorizontalLayout>
+							<Control width="682" height="264" bkimage="file='DLG_BOX_BAG\BACK_DASHED.png'" />
+							<PageLayout name="PageLayoutProperty" float="true" width="682" height="294"  itemsize="84,88" pagebar="true" inset="0,0,0,30"  pagebarstyle="PageBar">	
+								<Include count="66" source="DlgBagItem.xml"/>
+							</PageLayout>
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<Control width="682" height="264" bkimage="file='DLG_BOX_BAG\BACK_DASHED.png'" />
+							<PageLayout name="PageLayoutGiftProperty" float="true" width="682" height="294"  itemsize="84,88" pagebar="true" inset="0,0,0,30"  pagebarstyle="PageBar">	
+								<Include count="55" source="DlgBagItem.xml"/>
+							</PageLayout>
+						</HorizontalLayout>			
+					</TabLayout>
+					<Control width="15"/>
+				</HorizontalLayout>		
+				<Control height="10" />
+				<Label  width="720"  height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+				<Control height="10" />
+				<HorizontalLayout height="37" >	
+					<Control width="5" />
+					<VerticalLayout width="350">
+						<Control />
+						<HorizontalLayout  width="300"  height="37" inset="0,0,0,0" >
+							<Text  linespace="6" valign="top" text="提示：使用道具的赠送功能请仔细核对方昵称、帐号和ID。" textpadding="30,0,0,0" textcolor="#FF875D38"/>	
+						</HorizontalLayout>	
+						<Control />
+					</VerticalLayout>
+					<Control />
+					<HorizontalLayout width="325" height="37"  childpadding="8">	
+						<Control />
+						<Button name="ButtonMyBagRecord" statusimage="file='DLG_BOX_BAG\BUTTON_SHOP_RECORD.png' "/>
+						<Button name="ButtonMyShop" statusimage="file='DLG_BOX_BAG\BUTTON_SHOP.png' "/>
+						<Button name="ButtonMyInsure" statusimage="file='DLG_BOX_SHOP\BUTTON_MY_INSURE.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Control width="5" />
+				</HorizontalLayout>					
+				<Control height="20" />				
+			</VerticalLayout>	
+		</Container>
+	</VerticalLayout>
+</Window>

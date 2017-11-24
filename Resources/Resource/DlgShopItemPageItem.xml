@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="84" height="134" >
+		<HorizontalLayout>
+			<Control width="2" />
+			<VerticalLayout width="80" inset="0,2,0,0">
+				<Label name="ItemShopIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\PROPS_RMB_AGATE.png'"  />
+				<Control height="4" />
+				<Label name="ItemShopName" height="16" text="玛瑙" textcolor="#FFCCCCCC" align="center"/>
+				<Label name="ItemShopPrice" height="16" text="2000游戏币" textcolor="#FFFFFF00" align="center"/>
+				<VerticalLayout height="18">
+					<Control />
+					<HorizontalLayout name="ItemContainerVip" height="15" inset="10,0,0,0">
+						<Container width="15">						
+							<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+							<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+							<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+							<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+							<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+							<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>	
+						</Container>
+						<Label name="ItemShopVip" height="15" text="VIP9折起" textpadding="4,0,0,0"  textcolor="#FFFF0000" align="left"/>		
+					</HorizontalLayout>	
+					<Control />
+				</VerticalLayout>				
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Button visible="true" name="ItemGameSelect" float="true" pos="0,0,84,88" statusimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' "/>
+	</VerticalLayout>
+</Window>

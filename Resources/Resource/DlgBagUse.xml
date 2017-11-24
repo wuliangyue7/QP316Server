@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,310" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+	<Font name="宋体" size="14" bold="true" italic="false" default="false" /> 
+	<Font name="宋体" size="14" bold="false" italic="false" default="false" />  
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_310.png' ">  
+		<HorizontalLayout height="30">  <!--标题栏-->
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png'"/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_BAG_USE.png'"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="20"/>
+		<HorizontalLayout >
+			<Control />
+			<VerticalLayout width="420" >
+				<HorizontalLayout height="170">
+					<VerticalLayout width="84" height="170">
+						<HorizontalLayout height="90">
+							<Control width="2" />
+							<VerticalLayout width="80" inset="0,2,0,0">
+								<Label name="ItemPropIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\PROPS_RMB_AGATE.png'"  />
+								<Control height="4"/>		
+							</VerticalLayout>
+							<Control />
+							<Label  float="true" pos="0,0,84,88" bkimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' source='0,0,84,88'"/>
+						</HorizontalLayout>
+						<Label name="ItemPropName" height="20" text="负分清零卡" textcolor="#FFFFCC99" align="center"/>
+						<Label name="ItemPropCount" height="20" text="数量：10" textcolor="#FFFFCC99" align="center"/>
+						<Control height="3"/>
+						<Button name="ButtonGive" width="84" height="35" statusimage="file='DLG_BOX_BAG\BUTTON_GIVE.png' "/>
+					</VerticalLayout>
+					<Control width="20"/>
+					<VerticalLayout width="308" height="166" bkimage="file='DLG_BOX_BAG\BACK_USE.png'" > <!--透明框内-->
+						<Control height="12" />
+						<HorizontalLayout height="32">	
+							<Control />
+							<HorizontalLayout width="260" height="28">	
+								<Label text="数量：" width="50" height="28" font="0" align="right" textcolor="#FFFFCC99" />
+								<HorizontalLayout width="160" height="28" bkimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10'">
+									<Button name="ButtonDecrease" width="28" height="28" statusimage="file='DLG_BOX_BAG\BUTTON_DECREASE.png' " bindnumbername="NumberUseCount" bindnumberstep="-1"/>
+									<Control />
+									<Number name="NumberUseCount" text="2" width="60" height="28" font="0" align="center" textcolor="#FFFF6600" />
+									<Control />	
+									<Button name="ButtonIncrease" width="28" height="28" statusimage="file='DLG_BOX_BAG\BUTTON_INCREASE.png' " bindnumbername="NumberUseCount" bindnumberstep="1"/>									
+								</HorizontalLayout>	
+								<Label name="LabelUseAfterCount" text="剩余：9"  width="50" height="28"  align="right" textcolor="#FF875D38" />
+							</HorizontalLayout>	
+							<Control />
+						</HorizontalLayout>
+						<Control height="5"/>
+						<HorizontalLayout height="32">	
+							<Control />
+							<HorizontalLayout width="260" height="28">	
+								<Label text="使用：" width="50" height="28" font="0" align="right" textcolor="#FFFFCC99" />
+								<HorizontalLayout width="160" height="28" inset="7,0,0,0" bkimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10'">
+									<Label name="LabelUseArea" text="所有" height="28" textcolor="#FFFF6600" />
+								</HorizontalLayout>	
+							</HorizontalLayout>	
+							<Control />
+						</HorizontalLayout>
+						<Control height="20"/>
+						<HorizontalLayout height="52">
+							<Control />
+							<Button name="ButtonUse" width="164" height="52" statusimage="file='DLG_BOX_BAG\BUTTON_IMMEDIATELY_USE.png' "/>
+							<Control />
+						</HorizontalLayout>
+					</VerticalLayout> <!--透明框内结束-->
+					<Control />
+				</HorizontalLayout>	
+				<Control height="15" />
+				<Label  width="470"  height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+				<Control height="10" />	
+				<HorizontalLayout >	
+					<VerticalLayout height="45">
+						<HorizontalLayout>	
+							<Text text="功能：" height="45" width="60"  textcolor="#FF875D38" linespace="4" />
+							<Text name="TextlUseTip" text="使用该道具后，您的游戏积分将恢复至初始状态，不再为负分而烦恼！" textcolor="#FF875D38" linespace="4"/>
+						</HorizontalLayout>							
+					</VerticalLayout>
+				</HorizontalLayout>				
+
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

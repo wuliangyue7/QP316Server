@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="84" height="108">
+		<HorizontalLayout>
+			<Control width="2" />
+			<VerticalLayout width="80" inset="0,2,0,0">
+				<Label name="ItemPropIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\GMAE_PROPERTY_11.png'"  />
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Number name="ItemPropNum" float="true" pos="0,66,72,78" num="25" align="right" format="0123456789" numberimage="file='DLG_BOX_BAG\NUMBER_BLACK.png' " />
+		<Option visible="true" name="ItemPropSelect" float="true" pos="0,0,84,88" group="PropUseItemGroup" statusimage="file='DLG_BOX_SHOP\PROPS_SELECT.png'" selectedimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' source='168,0,252,88'"/>
+		<Label name="ItemPropName" height="20" align="center" text="臭蛋" textcolor="#FFB285"/>
+	</VerticalLayout>
+</Window>

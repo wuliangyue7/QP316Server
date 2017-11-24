@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<NodeElement maxwidth="187" height="25" explandnormal="ExpNormal" explandhot="ExpHot" explandselectd="" explanddisable="" collapsenormal="ColNormal"  collapsehot="ColHot" collapseselectd="" collapsedisable="">
+		<Container>
+			<HorizontalLayout name="ExpNormal" inset="3,0,5,0"  >
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\EXPAND_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>					
+			</HorizontalLayout>		
+			<HorizontalLayout name="ExpHot" inset="3,0,5,0"  >
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\EXPAND_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>				
+			</HorizontalLayout>	
+			
+			<HorizontalLayout name="ColNormal" inset="3,0,5,0"  >
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\COLLAPSE_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>								
+			</HorizontalLayout>			
+			<HorizontalLayout name="ColHot" inset="3,0,5,0"  >
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\COLLAPSE_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>					
+			</HorizontalLayout>	
+			<HorizontalLayout inset="3,0,5,0">
+				<VerticalLayout width="12">
+				</VerticalLayout>
+				<VerticalLayout >
+					<Control />
+					<HorizontalLayout height="17">
+						<Label name="GameKindIco"  width="16" height="16" bkimage="file='PLAZA_HALL_LIST\unDownload.png' " />
+						<Label name="GameKindName" text="游戏名字" textcolor="#FFB9B9E6" />
+						<Label name="GameKindFlagNew" visible="false" width="20" height="17" bkimage="file='PLAZA_HALL_LIST\type.png' source='0,0,20,17' " />
+						<Label name="GameKindFlagRecommed" visible="false" width="20" height="17" bkimage="file='PLAZA_HALL_LIST\type.png' source='20,0,40,17' " />
+						<Label name="GameKindFlagHot" visible="false" width="20" height="17" bkimage="file='PLAZA_HALL_LIST\type.png' source='40,0,60,17' " />
+						<Label name="GameKindFlagMatch" visible="true" width="20" height="17" bkimage="file='PLAZA_HALL_LIST\type.png' source='60,0,80,17' " />
+					</HorizontalLayout>	
+					<Control />
+				</VerticalLayout>	
+				<VerticalLayout name="GameKindDown" float="true" pos="0,0,187,25" visible="true">
+					<Control />
+					<Progress name="GameKindProgress"  height="2" min="0" max="100" value="100" fgimage="file='PLAZA_HALL_LIST\PROCESS1.png' corner='1,1,1,1'"/>
+				</VerticalLayout>				
+			</HorizontalLayout>				
+		</Container>	
+	</NodeElement>
+</Window>

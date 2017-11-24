@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window sizebox="4,4,6,6" caption="0,0,0,0">
+    <VerticalLayout name="AfficheBackGround" >
+		<Control />
+		<HorizontalLayout height="44">
+			<Control width="12"/>
+			<VerticalLayout name="ContainerChatInput" height="44" childpadding="2">
+				<HorizontalLayout height="16" width="224"  childpadding="3">
+					<Button name="ButtonChat1" width="42" height="16" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_FACE.png' "/>
+					<Button name="ButtonChat2" width="42" height="16" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_COLOR.png' "/>
+					<Button name="ButtonChat3" width="42" height="16" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_HIDE.png' "/>
+					<Button name="ButtonChat4" width="42" height="16" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_TRUMPET.png' "/>
+				</HorizontalLayout>	
+				<HorizontalLayout height="25" childpadding="5" inset="5,0,0,0">
+					<Edit name="EditChat" height="20"  font="0" tipvalue="输入你想说的" tipvaluecolor="#FF7F7F7F" bkcolor="#FF321E11" textpadding="0,1,2,1" textcolor="#FF784F2A" nativebkcolor="#FF321E11" disabledtextcolor="#FFA7A6AA" />			
+					<Button name="ButtonChatShort" width="25" height="25" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_SHORT.png' "/>
+					<Button name="ButtonSendChat"  width="15" height="25" statusimage="file='PLAZA_ROOM_CHAT\BUTTON_SEND.png' "/>
+
+				</HorizontalLayout>			
+			</VerticalLayout>
+		</HorizontalLayout>
+		<Control height="10"/>
+    </VerticalLayout>
+</Window>

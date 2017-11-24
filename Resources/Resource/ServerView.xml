@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window sizebox="0,0,0,0" roundcorner="0,0" caption="0,0,0,0" size="700,696">
+    <HorizontalLayout name="AfficheBackGround" flaot="false" pos="0,0,700,107" width="700" height="696">	
+		<HorizontalLayout height="29" width="364" float="true" relativeside="right" relativepos="373,7">
+			<Button name="ButtonTable1" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_JOIN.png' "/>
+			<Button name="ButtonTable2" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_SEARCH.png' "/>
+			<Button name="ButtonTable4" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_SETUP.png' "/>
+			<Button name="ButtonTable5" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_RULE.png' "/>
+			<HorizontalLayout width="100" inset="3,0,0,0">
+				<Button name="ButtonClose" width="94" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_QUIT.png' "/>
+			</HorizontalLayout>
+		</HorizontalLayout>	
+    </HorizontalLayout>
+</Window>

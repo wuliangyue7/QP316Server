@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container visible="true">
+		<HorizontalLayout visible="true"><!-- 边框 -->
+			<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\LAYOUT_BORDER_L.png'  corner='230,85,270,85'">
+			</HorizontalLayout>	
+			<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\LAYOUT_BORDER_R.png'  corner='270,85,230,85'">
+			</HorizontalLayout>			
+		</HorizontalLayout>
+		<HorizontalLayout visible="true"><!-- 左边与右边 -->
+			<HorizontalLayout width="214" >
+				<VerticalLayout inset="6,41,0,6">
+					<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\SIDE_LAYOUT_BORDER.png'  corner='20,20,20,20'">
+					</HorizontalLayout>						
+				</VerticalLayout>				
+			</HorizontalLayout >
+			<Control />	
+			<HorizontalLayout width="214"  >
+				<VerticalLayout inset="0,41,6,6">
+					<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\SIDE_LAYOUT_BORDER.png'  corner='20,20,20,20'">
+					</HorizontalLayout>						
+				</VerticalLayout>				
+			</HorizontalLayout>
+		</HorizontalLayout>
+
+		<Container visible="true" width="211"><!-- 大厅内容 -->
+			<HorizontalLayout>
+				<Container width="211">
+					<Include source="PlazaHallList.xml"/>	
+				</Container>
+				<Container >
+					<Container name="PlazaHallGame" visible="true" >
+						<Include source="PlazaHallGame.xml"/>						
+					</Container >		
+					<Container name="PlazaHallRoom" visible="false">
+						<Include source="PlazaHallRoom.xml"/>					
+					</Container>
+					<Container visible="true" mouse="false">
+						<Include source="PlazaHallMarquee.xml"/>
+					</Container>					
+				</Container>
+				<Container width="211" >
+					<Include source="PlazaHallAd.xml"/>
+				</Container>			
+			</HorizontalLayout >			
+		</Container>				
+	</Container>
+</Window>

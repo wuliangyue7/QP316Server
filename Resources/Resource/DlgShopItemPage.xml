@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+		<PageLayout itemsize="84,134" pagebar="true" inset="25,0,25,25"  xminchildpadding="20" pagebarstyle="PageBar">	
+		</PageLayout>
+</Window>

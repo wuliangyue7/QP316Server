@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<NodeElement maxwidth="187" height="25" explandnormal="ExpNormal" explandhot="ExpHot" explandselectd="" explanddisable="" collapsenormal="ColNormal"  collapsehot="ColHot" collapseselectd="" collapsedisable="">
+		<Container>
+			<HorizontalLayout name="ExpNormal" inset="3,0,5,0"  bkimage="file='PLAZA_HALL_LIST\EXPAND_NORMAL.png' corner='2,2,2,2'">
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\EXPAND_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>
+				<Label name="ExpNormalGameTypeName" text="展开正常" width="65" textcolor="#FFE9E9E9" />
+				<Control />
+				<Label name="ExpNormalGameTypeNum" width="40" text="共n款" align="right" textcolor="#FFA19AD7" />						
+			</HorizontalLayout>		
+			<HorizontalLayout name="ExpHot" inset="3,0,5,0"  bkimage="file='PLAZA_HALL_LIST\EXPAND_HOT.png' corner='2,2,2,2'">
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\EXPAND_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>
+				<Label name="ExpHotGameTypeName" text="展开移上" width="65" textcolor="#FFE9E9E9" />
+				<Control />
+				<Label name="ExpHotGameTypeNum" width="40" text="共n款" align="right" textcolor="#FFA19AD7" />					
+			</HorizontalLayout>	
+			
+			<HorizontalLayout name="ColNormal" inset="3,0,5,0"  bkimage="file='PLAZA_HALL_LIST\COLLAPSE_NORMAL.png' corner='2,2,2,2'">
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\COLLAPSE_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>			
+				<Label name="ColNormalGameTypeName" text="收缩正常" width="65"  />
+				<Control />
+				<Label name="ColNormalGameTypeNum" width="40" text="共n款" align="right" textcolor="#FF333399" />						
+			</HorizontalLayout>			
+			<HorizontalLayout name="ColHot" inset="3,0,5,0"  bkimage="file='PLAZA_HALL_LIST\COLLAPSE_HOT.png' corner='2,2,2,2'">
+				<VerticalLayout width="12">
+					<Control />
+					<Label width="7" height="7" bkimage="file='PLAZA_HALL_LIST\COLLAPSE_TRIANGLES.png'" />
+					<Control />
+				</VerticalLayout>	
+				<Label name="ColHotGameTypeName" text="收缩移上" width="65"  />
+				<Control />
+				<Label name="ColHotGameTypeNum" width="40" text="共n款" align="right" textcolor="#FF333399" />				
+			</HorizontalLayout>	
+		</Container>
+	</NodeElement>
+</Window>

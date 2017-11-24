@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="720,470" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_720_470.png' "> 
+		<HorizontalLayout height="30"> 
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_MY_BAG.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="5" />
+		<VerticalLayout >
+			<Control />
+			<HorizontalLayout height="410">
+				<Control />
+				<HorizontalLayout width="676" height="400">
+					<WkeBrowser name="WebBrowserRecord" bkcolor="#00000000"/>
+				</HorizontalLayout>
+				<Control />
+			</HorizontalLayout>
+			<Control />
+		</VerticalLayout>		
+	</VerticalLayout>
+</Window>

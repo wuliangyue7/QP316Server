@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<HorizontalLayout width="100" height="105" >
+		<HorizontalLayout>
+			<Control width="5"/>
+			<VerticalLayout width="80">
+				<Control height="5"/>
+				<Label name="ItemGameIOC" width="80" height="80" bkimage="file='GAME_KIND\LABEL_GAME_DEFAULT.png'"  />
+				<Control height="2"/>
+				<Label name="ItemGameName" height="18" text="欢乐斗地主" textcolor="#FFCCCCCC" align="center"/>
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>	
+		<Label float="true" pos="0,0,90,90" visible="true" bkimage="file='PLAZA_HALL_GAME\BUTTON_SELECT_GAME.png' source='0,0,90,90'"  />
+		<HorizontalLayout float="true" pos="0,0,100,100">
+			<Control />
+			<VerticalLayout width="36">	
+				<Control />
+				<CheckButton name="ItemGameCheck" width="36" height="36" normalstatusimage="DLG_BOX_ADDGAME\CHECKBT_UNCHECK.png" checkedstatusimage="DLG_BOX_ADDGAME\CHECKBT_CHECKED.png"/>
+				<Control height="6" />
+			</VerticalLayout>
+		</HorizontalLayout>				
+		
+	</HorizontalLayout>
+</Window>

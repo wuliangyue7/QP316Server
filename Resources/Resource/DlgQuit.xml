@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,310" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout name="HorizontalLayoutUI1" width="470" height="310" bkimage="file='DLG_BOX_QUIT\DLG_BACK_470_310.png' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_QUIT.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="47"/>
+		<HorizontalLayout height="90" childpadding="20">	
+			<Control />
+			<Button name="ButtonSwitch"  statusimage="file='DLG_BOX_QUIT\BT_SWITCH.png' "/>
+			<Button name="ButtonQuitRoom" enabled="false" statusimage="file='DLG_BOX_QUIT\BT_QUIT_ROOM.png' "/>
+			<Button name="ButtonQuitPlaza" statusimage="file='DLG_BOX_QUIT\BT_QUIT_PLAZA.png' "/>
+			<Control />
+		</HorizontalLayout>	
+		<Control height="25"/>
+		<HorizontalLayout >
+			<Control />
+			<HorizontalLayout width="440" height="100">
+				<WkeBrowser name="WebBrowserClosePlaza" bkcolor="#00000000"/>
+			</HorizontalLayout>
+			<Control />
+		</HorizontalLayout>	
+	
+    </VerticalLayout>
+</Window>

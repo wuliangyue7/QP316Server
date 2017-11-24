@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<HorizontalLayout  height="84" >
+		<Control />
+		<VerticalLayout  width="38%" maxwidth="492" >
+			<Control height="8" />
+			<HorizontalLayout height="62" >
+				<Label  name="RealTipFlag" mouse="false" pos="0,6" float="true"  visible="false"  width="17" height="46"  bkimage="file='PLAZA_HALL_REAL_TIP\LABEL_REAL_TIP_FLAG.png' "  />
+				<Control width="13" />
+				<Container width="62" height="62">
+					<HorizontalLayout width="62" height="62" inset="7,7,0,0">  <!-- 头像 -->
+						<ImageEx name="PlazaHallAvtatr" width="48" height="48" size="48,48" image="file='AVATAR_48_48\001.png' "/>
+					</HorizontalLayout>
+					<Button name="ButtonIndividual" width="62" height="62" statusimage="file='PLAZA_USER_INFO\BUTTON_INDIVIDUAL.png' "/>					
+				</Container>
+				<HorizontalLayout height="63"  >
+					<VerticalLayout  >
+						<HorizontalLayout>
+							<Label  width="45" height="21" text="昵称 " align="right"  textcolor="#FF7973AA" font="0"/>
+							<HorizontalLayout inset="8,1,20,0" height="21" bkimage="file='PLAZA_USER_INFO\LABEL_INFO_BACK.png'  corner='18,10,18,11'">
+								<Label name="LabelNickName" text="万花丛中过" textcolor="#FFFFFFFF" font="0" />
+							</HorizontalLayout>
+							<Container float="true" width="15" height="15" relativeside="right" relativepos="20,4" >						
+								<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+								<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+								<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+								<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+								<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+								<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>								
+							</Container>
+							<Button name="ButtonVip" float="true"  width="17" height="17" relativeside="right" relativepos="22,2" statusimage="file='PLAZA_USER_INFO\BUTTON_VIP.png' "/>
+							
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<Label  width="45" height="21" text="ID " align="right" textcolor="#FF7973AA" font="0"/>
+							<HorizontalLayout height="21" bkimage="file='PLAZA_USER_INFO\LABEL_INFO_BACK.png'  corner='18,10,18,11'">
+								<Number name="NumberUserID" textpadding="8,1,20,0" num="123456789" textcolor="#FFB4B4B4" font="0" />
+							</HorizontalLayout>
+							<Button name="ButtonCopyUserID" float="true"  width="13" height="13" relativeside="right" relativepos="20,4" statusimage="file='PLAZA_USER_INFO\BUTTON_COPY.png' "/>							
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<Label  width="45" height="21" text="等级 " align="right" textcolor="#FF7973AA" font="0"/>
+							<VerticalLayout  height="21">
+								<Control />
+								<Progress name="ProgressExperience" isstretchfore="false" height="7" min="0" max="100" value="50" fgimage="file='PLAZA_USER_INFO\LABEL_LEVEL_PROCESS_2.png' " bkimage="file='PLAZA_USER_INFO\LABEL_LEVEL_PROCESS_1.png' "/>
+							</VerticalLayout>
+							<HorizontalLayout float="true"  width="28" height="5" relativeside="right" relativepos="28,4" childpadding="2">
+								<Control />
+								<Label  width="11" bkimage="file='PLAZA_USER_INFO\LABEL_LEVEL_LEFT.png' "/>
+								<Number name="NumberUserLevel" width="15" num="25" format="0123456789" numberimage="file='PLAZA_USER_INFO\NUMBER_LEVEL_RIGHT.png' " />
+							</HorizontalLayout>	
+						</HorizontalLayout>	
+						
+					</VerticalLayout>
+					<Container >
+						<HorizontalLayout>
+						<Control width="10"/>
+							<VerticalLayout >
+								<HorizontalLayout>
+									<Label  width="45" height="21" text="游戏豆 " align="right" textcolor="#FF7973AA" font="0"/>
+									<HorizontalLayout inset="8,1,20,0" height="21" bkimage="file='PLAZA_USER_INFO\LABEL_INFO_BACK.png'  corner='18,10,18,11'">
+										<Number name="NumberGameBean" num="0.00" decimal="true" textcolor="#FFFFFF00" font="0" />
+									</HorizontalLayout>
+									<Button name="ButtonRecharge" float="true"  width="13" height="13" relativeside="right" relativepos="20,4" statusimage="file='PLAZA_USER_INFO\BUTTON_RECHARGE.png' "/>							
+								</HorizontalLayout>
+								<HorizontalLayout>
+									<Label  width="45" height="21" text="游戏币 " align="right" textcolor="#FF7973AA" font="0"/>
+									<HorizontalLayout inset="8,1,20,0" height="21" bkimage="file='PLAZA_USER_INFO\LABEL_INFO_BACK.png'  corner='18,10,18,11'">
+										<Number name="NumberGameScore" num="123456789" seg="true" textcolor="#FFFFCC00" font="0" />
+									</HorizontalLayout>
+									<Button name="ButtonGetScore" float="true"  width="13" height="13" relativeside="right" relativepos="20,4" statusimage="file='PLAZA_USER_INFO\BUTTON_TAKE.png' "/>							
+								</HorizontalLayout>
+								<HorizontalLayout>
+									<Label  width="45" height="21" text="元宝 " align="right" textcolor="#FF7973AA" font="0"/>
+									<HorizontalLayout inset="8,1,20,0" height="21" bkimage="file='PLAZA_USER_INFO\LABEL_INFO_BACK.png'  corner='18,10,18,11'">
+										<Number name="NumberGameIngot" num="10" textcolor="#FFFF9900" font="0" />
+									</HorizontalLayout>										
+									<Button name="ButtonExcharge" float="true"  width="13" height="13" relativeside="right" relativepos="20,4" statusimage="file='PLAZA_USER_INFO\BUTTON_EXCHARGE.png' "/>							
+								</HorizontalLayout>			
+							</VerticalLayout>
+						</HorizontalLayout>
+						<Toast name="ntoast" float="true" pos="0,20,60,44" bkcolor="#00000000" toastheight="24" toasttextcolor="#FFD14120" toasttextalign="center" toastwidth="60" mouse="false" toastbkimage="file='COMM_WIDGET\TOAST_BACK.png'  corner='11,11,11,11'" toasttext="复制成功"/>			
+					</Container>
+				</HorizontalLayout>							
+			</HorizontalLayout>
+				<!--道具BUFF效果图标-->
+			<HorizontalLayout height="14" visible="true">
+				<Control width="2" />
+				<Control name="DoubleBuff" width="25" height="14" bkimage="file='PLAZA_USER_INFO\DOUBLE.png'"/>
+				<Control name="AmuletBuff" width="25" height="14" bkimage="file='PLAZA_USER_INFO\AMULET.png'"/>
+				<Control name="GuardKickBuff" width="25" height="14" bkimage="file='PLAZA_USER_INFO\GUARDKICK.png'"/>
+				<Control />
+			</HorizontalLayout>
+		</VerticalLayout>
+		<!-- <Control /> -->
+		<HorizontalLayout >
+			<Control />
+			<HorizontalLayout  width="90%" maxwidth="350" >
+				<Button name="ButtonMyTask" width="71" height="25" statusimage="file='PLAZA_USER_INFO\BUTTON_MY_TASK.png' "/>
+				<Control />	
+				<Button name="ButtonMyFriend" width="71" height="25" statusimage="file='PLAZA_USER_INFO\BUTTON_MY_FRIEND.png' "/>
+				<Control />	
+				<Button name="ButtonBaseEnsure" width="71" height="25" statusimage="file='PLAZA_USER_INFO\BUTTON_BASE_ENSURE.png' "/>
+				<Control />	
+				<Button name="ButtonCheckIn" width="71" height="25" statusimage="file='PLAZA_USER_INFO\BUTTON_CHECK_IN.png' "/>
+			</HorizontalLayout>	
+			<Control />
+		</HorizontalLayout>
+	</HorizontalLayout>
+</Window>

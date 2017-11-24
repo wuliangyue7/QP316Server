@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,510" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_510.png' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_SETUP.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="25"/>
+
+		<VerticalLayout height="165" childpadding="10" >
+			<HorizontalLayout height="24" inset="50,0,0,0">
+				<Label text="{b}热键设置：{/b}"  textcolor="#FFFFCC99" showhtml="true"/>
+			</HorizontalLayout>			
+			
+			<HorizontalLayout height="29" inset="60,0,0,0">
+				<VerticalLayout width="100">
+					<Control />
+					<Label text="老板键设置："  textcolor="#FFFFCC99" align="right"/>
+					<Control />
+				</VerticalLayout>
+				<HotKey name="HotKeyBoss" width="145" height="29"  key="hotkey='F12' ctrl='true' " tipvalue="无" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF9900" textpadding="10,3,8,3" textcolor="#FFF6600" disabledtextcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_M.png'  corner='8,8,8,8'" hotimage="file='COMM_WIDGET\EDIT_HOT_M.png'  corner='8,8,8,8'" focusedimage="file='COMM_WIDGET\EDIT_HOT_M.png'  corner='8,8,8,8' " disabledimage="file='COMM_WIDGET\EDIT_ENA_M.png'  corner='8,8,8,8' "/>
+			</HorizontalLayout>	
+			<HorizontalLayout height="29" inset="60,0,0,0">
+				<VerticalLayout width="100">
+					<Control />
+					<Label text="提取私聊信息："  textcolor="#FFFFCC99" align="right" />
+					<Control />
+				</VerticalLayout>
+				<HotKey name="HotKeyChat" width="145" height="29" key="hotkey='F11' " tipvalue="无" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF9900" textpadding="10,3,8,3" textcolor="#FFF6600" disabledtextcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_M.png'  corner='8,8,8,8'" hotimage="file='COMM_WIDGET\EDIT_HOT_M.png'  corner='8,8,8,8'" focusedimage="file='COMM_WIDGET\EDIT_HOT_M.png'  corner='8,8,8,8' " disabledimage="file='COMM_WIDGET\EDIT_ENA_M.png'  corner='8,8,8,8' "/>
+			</HorizontalLayout>		
+			<HorizontalLayout height="60" inset="60,0,0,0">
+				<Label text="发送私聊：" width="100" height="20" textcolor="#FFFFCC99" align="right" />
+				<VerticalLayout height="60" childpadding="10">
+					<RadioButton name="RadioButtonEnter"   height="20" width="200" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFF6600" text="按 Enter 键发送私聊信息" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+					<RadioButton name="RadioButtonCtrlEnter" height="20" width="220" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFF6600" text="按 Ctrl + Enter 键发送私聊信息" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>					
+		</VerticalLayout>		
+		<Control height="15"/>
+		<Label name="LableLine" width="470" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+		<Control height="10"/>	
+		<VerticalLayout height="155" childpadding="10">
+			<HorizontalLayout height="15" inset="50,0,0,0">
+				<Label text="{b}系统设置：{/b}"  textcolor="#FFFFCC99" showhtml="true"/>
+			</HorizontalLayout>		
+			<VerticalLayout height="125" inset="90,0,0,0" childpadding="15">
+				<CheckButton name="CheckButtonFull" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="开启大厅默认全屏模式"  normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+				<!-- <CheckButton name="CheckButtonBase" height="20" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="自动领取低保" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/> -->
+				<CheckButton name="CheckButtonInOut" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="显示用户进出信息" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+				<CheckButton name="CheckButtonDesk" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="突出显示自己所在游戏桌" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+			</VerticalLayout>
+		</VerticalLayout>	
+		<Control height="15"/>
+		<Label name="LableLine" width="470" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+		<Control height="20"/>
+		<HorizontalLayout height="37" childpadding="10">	
+			<Control />
+			<Button name="ButtonComfirm" statusimage="file='COMM_WIDGET\BT_OK.png' "/>
+			<Button name="ButtonDefault" statusimage="file='COMM_WIDGET\BT_DEFAULT.png' "/>
+			<Button name="ButtonCancle" statusimage="file='COMM_WIDGET\BT_CANCEL.png' "/>
+			<Control />
+		</HorizontalLayout>		
+    </VerticalLayout>
+</Window>

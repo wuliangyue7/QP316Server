@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<VerticalLayout name="InsureItemRecord" >
+		<Control />
+		<HorizontalLayout height="360">
+			<Control />
+			<HorizontalLayout width="676" height="359">
+				<WkeBrowser name="WebBrowserRecord" bkcolor="#00000000"/>
+			</HorizontalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Control />
+	</VerticalLayout>
+</Window>

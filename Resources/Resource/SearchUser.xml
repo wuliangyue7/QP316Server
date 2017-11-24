@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="441,245" sizebox="4,4,6,6" caption="0,0,0,0">
+    <Container name="ContainerUI1" >	   	
+            <Label name="LabelUI1" text="好友游戏昵称：" float="true" pos="41,72,132,91" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="LabelUI2" text="好友游戏ID：" float="true" pos="53,110,132,126" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />           
+	    <Combo name="ComboNickName" float="true" pos="128,68,284,92" dropboxsize="0,150" dropboxbkColor="#FFFFFFFFF" dropboxborderColor="#FF000000" textpadding="3,0,0,0"itemtextpadding="3,0,0,0"  itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFFFFFFF" itemhottextcolor="#FF000000" itemhotbkcolor="#FF4875A3" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file='COMBO_NORMAL' restype='PNG' corner='3,3,12,3' "/>
+	    <Edit name="EditUINickName" float="true" pos="130,70,264,90" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />	            
+	    <Combo name="ComboGameID" float="true" pos="128,103,284,127" dropboxsize="0,150" dropboxbkColor="#FFFFFFFFF" dropboxborderColor="#FF000000" textpadding="3,0,0,0"itemtextpadding="3,0,0,0"  itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFFFFFFF" itemhottextcolor="#FF000000" itemhotbkcolor="#FF4875A3" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file='COMBO_NORMAL' restype='PNG' corner='3,3,12,3' " />	
+	    <Edit name="EditUIGameID" float="true" pos="130,105,264,125" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Button name="ButtonOK" float="true" pos="300,83,386,111" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" statusimage="file='BT_SEARCH_CONFIRM' restype='PNG'"/>
+            <Label name="LabelUI3" text="游戏帐号" float="true" pos="40,168,96,186" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="LabelUI4" text="游戏 I D" float="true" pos="125,168,177,186" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="LabelUI5" text="所在位置" float="true" pos="245,168,297,186" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="LabelUI6" float="true"  pos="28,189,415,191" bkimage="file='IMAGE_LINE' restype='PNG'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Label name="LabelAccounts" text=""  float="true" pos="20,198,106,216" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"/>
+            <Label name="LabelGameID" text=""  float="true" pos="111,198,190,216" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"/>
+            <Label name="LabelPosition" text=""  float="true" pos="194,198,343,216" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"/>
+            <Button name="ButtonEnter" float="true" pos="349,195,393,212" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" statusimage="file='BT_SEARCH_ENTER' restype='PNG'"/>
+    </Container>
+</Window>

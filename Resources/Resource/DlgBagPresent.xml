@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,310" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+	<Font name="宋体" size="12" bold="true" italic="false" default="false" /> 
+	<Font name="宋体" size="14" bold="false" italic="false" default="false" />  
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_310.png' ">  
+		<HorizontalLayout height="30"> 
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png'"/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_BAG_PRESENT.png'"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="30"/>
+		<HorizontalLayout >
+			<Control />
+			<VerticalLayout width="420" >
+				<HorizontalLayout height="222">
+					<VerticalLayout width="84" height="170">
+						<HorizontalLayout height="90">
+							<Control width="2" />
+							<VerticalLayout width="80" inset="0,2,0,0">
+								<Label name="ItemPropIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\PROPS_RMB_AGATE.png'"  />
+								<Control height="4"/>		
+							</VerticalLayout>
+							<Control />
+							<Label  float="true" pos="0,0,84,88" bkimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' source='0,0,84,88'"/>
+						</HorizontalLayout>
+						<Label name="ItemPropName" height="20" text="负分清零卡" textcolor="#FFFFCC99" align="center"/>
+						<Label name="ItemPropCount" height="20" text="数量：10" textcolor="#FFFFCC99" align="center"/>
+						<Control height="3"/>
+					</VerticalLayout>
+					<Control width="10"/>
+					<VerticalLayout width="308" height="222" bkimage="file='DLG_BOX_BAG\BACK_GIVE.png'" > <!--透明框内-->
+						<Control height="30" />
+						<HorizontalLayout height="20" >
+							<Control />
+							<RadioButton name="RadioButtonGameID"  height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFFCC99" text="依据ID" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' " />
+							<RadioButton name="RadioButtonNickName"  height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFFCC99" text="依据昵称" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png'" checked="true"/>
+							<Control />
+						</HorizontalLayout>
+						<Control height="12" />
+						<HorizontalLayout height="32">	
+							<Control width="15"/>
+							<HorizontalLayout width="290" height="32">	
+								<Label name="LabelReceiveName" text="接收昵称：" width="70" height="28" font="0" align="right" textcolor="#FFFFCC99" />
+								<HorizontalLayout width="160" height="32" inset="0,0,0,0" >
+									<Edit name="EditReceiveName" width="160" height="32" tipvalue="" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF6600" textpadding="10,3,8,3" textcolor="#FFFF6600" disabledtextcolor="#FFBF9059" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png'  corner='10,10,10,10'" hotimage="file='COMM_WIDGET\EDIT_HOT_S.png'  corner='10,10,10,10'" focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png'  corner='10,10,10,10' " disabledimage="file='COMM_WIDGET\EDIT_ENA_S.png'  corner='10,10,10,10' "/>
+								</HorizontalLayout>	
+							</HorizontalLayout>	
+							<Control />
+						</HorizontalLayout>
+						<Control height="10"/>
+						<HorizontalLayout height="32">	
+							<Control width="15"/>
+							<HorizontalLayout width="290" height="28">	
+								<Label text="赠送数量：" width="70" height="28" font="0" align="right" textcolor="#FFFFCC99" />
+								<HorizontalLayout width="160" height="28" bkimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10'">
+									<Button name="ButtonDecrease" width="28" height="28" statusimage="file='DLG_BOX_BAG\BUTTON_DECREASE.png' " bindnumbername="NumberUseCount" bindnumberstep="-1"/>
+									<Control />
+									<Number name="NumberUseCount" num="1" width="60" height="28" font="0" align="center" textcolor="#FFFF6600" />
+									<Control />	
+									<Button name="ButtonIncrease" width="28" height="28" statusimage="file='DLG_BOX_BAG\BUTTON_INCREASE.png'" bindnumbername="NumberUseCount" bindnumberstep="1"/>									
+								</HorizontalLayout>	
+								<Label name="LabelUseAfterCount" padding="5" text="剩余：9" width="80" height="28" textcolor="#FF875D38" />
+							</HorizontalLayout>	
+							<Control />
+						</HorizontalLayout>
+						<Control height="20"/>
+						<HorizontalLayout height="52">
+							<Control />
+							<Button name="ButtonGive" width="164" height="52" statusimage="file='DLG_BOX_BAG\BUTTON_IMMEDIATELY_GIVE.png' "/>
+							<Control />
+						</HorizontalLayout>
+					</VerticalLayout> <!--透明框内结束-->
+					<Control />
+				</HorizontalLayout>	
+				<HorizontalLayout >	
+				</HorizontalLayout>				
+
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

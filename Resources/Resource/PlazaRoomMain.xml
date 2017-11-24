@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container visible="true">
+		<HorizontalLayout visible="true"><!-- 中间 -->
+			<HorizontalLayout inset="14,50,14,15">
+				<HorizontalLayout  bkimage="file='PLAZA_ROOM_MAIN\LAYOUT_MID.png'  corner='28,34,650,34'">
+				</HorizontalLayout>		
+			</HorizontalLayout>	
+		</HorizontalLayout>		
+		<HorizontalLayout visible="true"><!-- 边框 -->
+			<HorizontalLayout bkimage="file='PLAZA_ROOM_MAIN\LAYOUT_BORDER_L.png'  corner='230,85,270,85'">
+			</HorizontalLayout>	
+			<HorizontalLayout bkimage="file='PLAZA_ROOM_MAIN\LAYOUT_BORDER_R.png'  corner='270,85,230,85'">
+			</HorizontalLayout>			
+		</HorizontalLayout>
+		<VerticalLayout>
+			<HorizontalLayout visible="true" height="50" ><!-- 中间层导航 -->
+				<HorizontalLayout width="211" >
+				</HorizontalLayout >
+				<Container >
+					<HorizontalLayout inset="0,12,0,0" >
+						<Control />	
+						<HorizontalLayout width="468" childpadding="2">
+							<Control width="92"  height="38" bkimage="file='PLAZA_HALL_MAIN\MID_BT_GAME.png'  "/>
+							<Button name="ButtonMidRecharge" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_RECHARGE.png' "/>
+							<Button name="ButtonMidShop" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_SHOP.png' "/>
+							<Button name="ButtonMidBag" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_BAG.png' "/>
+							<Button name="ButtonMidBank" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_BANK.png' "/>
+						</HorizontalLayout>
+						<Control />	
+					</HorizontalLayout>
+				</Container>
+				<HorizontalLayout width="211"  >
+				</HorizontalLayout>				
+			</HorizontalLayout>	
+			<HorizontalLayout visible="true" height="50" ><!-- 主房间内容 -->
+				<HorizontalLayout inset="20,5,15,0">
+					<Label  text="您的位置："  width="67" height="20" textcolor="#FF9A6D2B"/>	
+					<Label  text="游戏大厅>十三张>新手乐园"  width="250" height="20" textcolor="#FFDBB783" />
+					<HorizontalLayout height="29" width="364" float="true" relativeside="right" relativepos="630,7">
+						<Button name="ButtonJoin" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_JOIN.png' "/>
+						<Button name="ButtonSearch" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_SEARCH.png' "/>
+						<Button name="ButtonSetup" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_SETUP.png' "/>
+						<Button name="ButtonRule" width="66" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_RULE.png' "/>
+						<HorizontalLayout width="100" inset="3,0,0,0">
+							<Button name="ButtonQuit" width="94" height="29" statusimage="file='PLAZA_ROOM_MAIN\BUTTON_QUIT.png' "/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+				</HorizontalLayout>
+			</HorizontalLayout>		
+			<HorizontalLayout visible="true" ><!-- 主房间内容 -->
+				<HorizontalLayout inset="14,50,14,15" >
+	<!-- 				<HorizontalLayout bkcolor="#FF00FF00">
+					</HorizontalLayout> -->
+		
+				</HorizontalLayout>	
+			</HorizontalLayout>					
+		</VerticalLayout>
+	
+	</Container>
+</Window>

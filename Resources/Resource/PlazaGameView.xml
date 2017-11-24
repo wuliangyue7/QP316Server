@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="518,305" sizebox="4,4,6,6" caption="0,0,0,0" kindxcount="5" kindycount="3" kindsize="116,151" kindpadding="40,25,40,20"  serverxcount="3" serverycount="1" serversize="207,384" serverpadding="45,26,45,30">
+    <Container name="BackGround" float="false" pos="0,0,546,344" width="546" height="344" >
+	<Container name="PageLayer" float="false" pos="0,0,546,344" width="546" height="344" />
+	<Button name="ButtonKindLeft" float="true" visible="true" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="file='BT_ARROW_LEFT' restype='PNG'" />
+	<Button name="ButtonKindRight" float="true" visible="true" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="file='BT_ARROW_RIGHT' restype='PNG'" />
+    </Container>	
+</Window>

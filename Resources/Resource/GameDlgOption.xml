@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,510" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_510.png' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_GAME_SETUP.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="25"/>
+
+		<VerticalLayout height="165" childpadding="10" >
+			<HorizontalLayout height="24" inset="50,0,0,0">
+				<Label text="{b}游戏设置：{/b}"  textcolor="#FFFFCC99" showhtml="true"/>
+			</HorizontalLayout>			
+			<VerticalLayout height="125" inset="90,0,0,0" childpadding="15">
+				<CheckButton name="CheckAllowSound" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="允许游戏声音效果"  normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+				<CheckButton name="CheckAllowBackGroundSound" height="20" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="允许游戏背景音乐" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>			
+				<CheckButton name="CheckAllowLookon" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="允许其他玩家旁观"  normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+<!-- 				<CheckButton name="CheckFullGameView" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="开启游戏默认全屏模式"  normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+ -->			</VerticalLayout>							
+		</VerticalLayout>		
+		<Control height="15"/>
+		<Label name="LableLine" width="470" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+		<Control height="10"/>	
+		<VerticalLayout height="155" childpadding="10">
+			<HorizontalLayout height="15" inset="50,0,0,0">
+				<Label text="{b}其他设置：{/b}"  textcolor="#FFFFCC99" showhtml="true"/>
+			</HorizontalLayout>		
+			<VerticalLayout height="125" inset="90,0,0,0" childpadding="15">
+				<CheckButton name="CheckNotifyUserInOut" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="显示用户进出信息" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+				<CheckButton name="CheckDebarDetestChat" height="22" width="200" autotextpadding="false" textpadding="35,0,0,0" textcolor="#FFF6600" text="屏蔽厌恶玩家信息" normalstatusimage="COMM_WIDGET\CHECK_UNCHECK.png" checkedstatusimage="COMM_WIDGET\CHECK_CHECKED.png"/>
+			</VerticalLayout>
+		</VerticalLayout>	
+		<Control height="15"/>
+		<Label name="LableLine" width="470" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+		<Control height="20"/>
+		<HorizontalLayout height="37" childpadding="10">	
+			<Control />
+			<Button name="ButtonComfirm" statusimage="file='COMM_WIDGET\BT_OK.png' "/>
+			<Button name="ButtonDefault" statusimage="file='COMM_WIDGET\BT_DEFAULT.png' "/>
+			<Button name="ButtonCancle" statusimage="file='COMM_WIDGET\BT_CANCEL.png' "/>
+			<Control />
+		</HorizontalLayout>		
+    </VerticalLayout>
+</Window>

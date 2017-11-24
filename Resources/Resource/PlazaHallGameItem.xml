@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="90" height="105" >
+		<HorizontalLayout>
+			<Control width="5"/>
+			<VerticalLayout width="80">
+				<Control height="5"/>
+				<Label name="ItemGameIOC" width="80" height="80" bkimage="file='GAME_KIND\LABEL_GAME_DEFAULT.png'"  />
+				<Control height="2"/>
+				<Label name="ItemGameName" height="18" text="欢乐斗地主" textcolor="#FF999999" align="center"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<Button visible="true" name="ItemGameSelect" float="true" pos="0,0,90,90" statusimage="file='PLAZA_HALL_GAME\BUTTON_SELECT_GAME.png' "/>
+		<Button visible="false" name="ItemGameDelete" float="true" pos="0,0,32,28" width="32" height="28" statusimage="file='PLAZA_HALL_GAME\BUTTON_DELET_GAME.png'"/>
+		<HorizontalLayout visible="false" name="ItemGameDown" float="true" pos="0,0,90,90" >
+			<HorizontalLayout>
+				<Control width="5"/>
+				<VerticalLayout width="80">
+					<Control height="5"/>
+					<Label name="ItemGameBack" width="80" height="80" bkimage="file='PLAZA_HALL_GAME\LABEL_DOWN_BACK.png'"  />
+				</VerticalLayout>
+				<Control />
+			</HorizontalLayout>
+			<VerticalLayout inset="10,0,0,10" float="true" pos="0,0,90,90">
+				<Control />
+				<Container width="70" height="18">
+					<Label name="ItemGameInstalling"  visible="false"  text="正在安装" textcolor="#FFFFFF00" align="center"/>
+					<Label name="ItemGameDownloading" visible="false"  text="正在下载" textcolor="#FF00FF00" align="center"/>
+					<Label name="ItemGameQueuing"     visible="true"   text="列队中"   textcolor="#FFCCCCCC" align="center"/>
+				</Container>
+				<Control height="1"/>
+				<Progress name="ItemGameProgress" width="70" height="7" min="0" max="100" value="100" fgimage="file='PLAZA_HALL_GAME\PROCESS_2.png' corner='4,3,4,4'" bkimage="file='PLAZA_HALL_GAME\PROCESS_1.png' corner='4,3,4,4'"/>
+			</VerticalLayout>			
+		</HorizontalLayout>
+		
+		
+	</VerticalLayout>
+</Window>

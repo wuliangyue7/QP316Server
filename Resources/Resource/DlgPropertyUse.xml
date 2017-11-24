@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="512,330" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+	<Font name="宋体" size="14" bold="true" italic="false" default="false" /> 
+	<Font name="宋体" size="14" bold="false" italic="false" default="false" />  
+    <VerticalLayout bkimage="file='DLG_BOX_PROP_USE\DLG_BACK_512_330.png' ">  
+		<HorizontalLayout height="30">  <!--标题栏-->
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png'"/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_PROP_USE.png'"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+				<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="40" />
+		<HorizontalLayout height="150"> <!--道具-->
+			<Control width="27"/>
+			<PageLayout name="PageLayoutGiftProperty" width="460" height="150" itemsize="84,108" pagebar="true" inset="6,0,0,0"  pagebarstyle="PageBar" xmaxchildpadding="6">	
+				<Include count="10" source="DlgPropUseItem.xml"/>
+			</PageLayout>
+		</HorizontalLayout>
+		<Control height="10"/>
+		<HorizontalLayout height="35">
+			<Control />
+			<Button name="ButtonPropUse"  width="84" height="35" statusimage="file='DLG_BOX_PROP_USE\BT_USE.png' "/>
+			<Control width="20"/>
+			<Button name="ButtonPropBuy"  width="84" height="35" statusimage="file='DLG_BOX_PROP_USE\BT_BUY.png' "/>
+			<Control />
+		</HorizontalLayout>
+		<Control height="10"/>
+		<HorizontalLayout height="40">
+			<Control width="30"/>
+			<Text name="TextPropertyInfo" width="460" linespace="5" textcolor="#875D38" text="使用后使对方减少一定的魅力值！同时臭蛋效果会骚扰对方的神智！使其意识模糊，不得不说这是百年难度一见的好道具！"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

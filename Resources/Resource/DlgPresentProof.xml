@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,310" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout name="InsureMain" bkimage="file='COMM_BACK\DLG_BACK_470_310.png' "> 
+		<HorizontalLayout name="HLayoutUICaption" height="34"> 
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_PRESENT_PROOF.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="20"/>
+		<HorizontalLayout height="50"> <!--赠送人，接收人-->
+			<Control />
+			<VerticalLayout width="170">
+				<HorizontalLayout>
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="赠送人昵称：" align="right" />
+					<Label name="LabelByAccount" textcolor="#FFFF6600" text="万花从中过" />
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<Control width="10"/>
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="赠送人ID：" align="right" />
+					<Label name="LabelByID" textcolor="#FFFF6600" text="9527" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control width="10"/>
+			<VerticalLayout width="25"> <!--箭头图标-->
+				<Control />
+				<Control height="25" bkimage="file='DLG_BOX_INSURE\ARROW.png' "/>
+				<Control />
+			</VerticalLayout>
+			<Control width="10"/>
+			<VerticalLayout width="170">
+				<HorizontalLayout>
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="接收人昵称：" align="right" />
+					<Label name="LabelTargetAccount" textcolor="#FFFF6600" text="我是周星星" />
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<Control width="10"/>
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="接收人ID：" align="right" />
+					<Label name="LabelTargetID" textcolor="#FFFF6600" text="9528" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Control height="2"/>
+		<HorizontalLayout height="88"> <!--中间，赠送金额-->
+			<Control />
+			<HorizontalLayout width="408" height="88" bkimage="file='DLG_BOX_INSURE\TRANSPARENT.png' ">
+				<Control width="20"/>
+				<VerticalLayout width="300">
+					<Control />
+					<HorizontalLayout height="22">
+						<Label width="90" textcolor="#FFFFCC99" text="赠送游戏币：" align="right" />
+						<Label name="TransferScore" font="3" textcolor="#FFFFCC00" text="91328" />
+					</HorizontalLayout>
+					<Control height="5"/>
+					<HorizontalLayout height="22">
+						<Control width="10"/>
+						<Label width="90" textcolor="#FFFFCC99" text="大写：" align="right" />
+						<Label name="LabelChineseNum"font="3" textcolor="#FFFFCC00" text="玖万壹仟叁佰贰拾柒" />
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+				<Control />
+			</HorizontalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Control height="5"/>
+		<HorizontalLayout height="45"> <!--日期，编号-->
+			<Control width="20"/>
+			<VerticalLayout width="400">
+				<Control />
+				<HorizontalLayout height="20">
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="赠送日期：" align="right" />
+					<Label name="LabelDate" textcolor="#FFFF6600" text="2015-10-28 20:01:35" />
+				</HorizontalLayout>
+				<Control height="4"/>
+				<HorizontalLayout height="20">
+					<Label width="90" font="2" textcolor="#FFFFCC99" text="凭证编号：" align="right" />
+					<Label name="LabelProofNum" textcolor="#FFFF6600" text="ABCD-1234-DCBA-5678-9527" />
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Control height="2"/>
+		<HorizontalLayout height="2"> <!--分割线-->
+			<Control />
+			<Control width="470" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+			<Control />
+		</HorizontalLayout>
+		<Control height="7"/>
+		<HorizontalLayout height="37"> <!--底栏-->
+			<Control width="30"/>
+			<Label width="225" textcolor="#FF875D38" text="提示：将保存至目录的Proof文件夹中。"/>
+			<Button name="ButtonSaveAndClose" width="104" height="37" statusimage="file='DLG_BOX_INSURE\BT_SAVE_AND_CLOSE.png' " />
+			<Control width="3"/>
+			<Button name="ButtonSaveNotClose" width="104" height="37" statusimage="file='DLG_BOX_INSURE\BT_SAVE_NOT_CLOSE.png' " />
+		</HorizontalLayout>
+		<Control />
+		<Control float="true" pos="318,144,422,219" bkimage="file='DLG_BOX_INSURE\PRESENT_SIGN.png' "/> <!--印章-->
+	</VerticalLayout>
+</Window>

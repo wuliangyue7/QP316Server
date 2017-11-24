@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<VerticalLayout name="InsureItemAccess" >
+		<VerticalLayout>
+			<HorizontalLayout height="130"> <!--银行图标和信息-->
+				<Control />
+				<VerticalLayout width="180">
+					<HorizontalLayout height="77">
+						<Control />
+						<Control width="71" height="77" bkimage="file='DLG_BOX_INSURE\USERSCORE.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Label text="携带游戏币" height="20" align="center" font="3" textcolor="#FFFFCC99" />
+					<Number name="NumberUserScore" font="4" height="20" num="123456789" seg="true" align="center" textcolor="#FFFFCC00" />
+				</VerticalLayout> 
+				<VerticalLayout width="71">
+					<Control />
+					<Control width="71" height="77" bkimage="file='DLG_BOX_INSURE\CONVERT.png' "/>
+					<Control />
+				</VerticalLayout>
+				<VerticalLayout width="180">
+					<HorizontalLayout height="77">
+						<Control />
+						<Control width="71" height="77" bkimage="file='DLG_BOX_INSURE\USERINSURE.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Label text="银行存款" height="20" align="center" font="3" textcolor="#FFFFCC99" />
+					<Number name="NumberAcessUserInsrue" font="4" height="20" num="123456789" seg="true" align="center" textcolor="#FFFFCC00" />
+				</VerticalLayout> 
+				<Control />
+			</HorizontalLayout>
+			<Control height="2"/>
+			<HorizontalLayout height="2"> <!--分割线-->
+				<Control />
+				<Control width="720" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+				<Control />
+			</HorizontalLayout>
+			<Control height="8"/>
+			<HorizontalLayout height="26" childpadding="3"> <!--1万，5万等按钮-->
+				<Control />
+				<Button name="ButtonW1"     width="48" height="26" textpadding="3,6,0,0" align="top" text="1万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW5"     width="48" height="26" textpadding="3,6,0,0" align="top"  text="5万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW10"    width="48" height="26" textpadding="3,6,0,0" align="top"  text="10万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW50"    width="48" height="26" textpadding="3,6,0,0" align="top"  text="50万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW100"   width="48" height="26" textpadding="3,6,0,0" align="top"  text="1百万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW1000"  width="48" height="26" textpadding="3,6,0,0" align="top"  text="1千万" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonW10000" width="48" height="26" textpadding="3,6,0,0" align="top"  text="1亿" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonAllIn"  width="48" height="26" textpadding="3,6,0,0" align="top"  text="全存" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Button name="ButtonAllOut" width="48" height="26" textpadding="3,6,0,0" align="top"  text="全取" textcolor="#FFFFCC99" statusimage="file='DLG_BOX_INSURE\BT_COMMON.png' " />
+				<Control />
+			</HorizontalLayout>
+			<Control height="2"/>
+			<Label name="LabelInOut" height="18" font="3" text="玖万柒仟伍佰零贰拾"  textcolor="#FFFF6600" align="center" />		
+			<Control height="2"/>
+			<HorizontalLayout height="34"> <!--存取金币-->
+				<Control width="152"/>
+				<Label text="存取金额：" width="80"  textcolor="#FFFFCC99" />
+				<Edit name="EditInOut" width="222" font="3"  textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" numonly="true" seg="true" maxchar="16" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " />
+				<Control width="10"/>
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="34"> <!--银行密码-->
+				<Control width="152"/>
+				<Label text="银行密码：" width="80"  textcolor="#FFFFCC99" />
+				<Edit name="EditPassWord" width="222" tipvalue="存款不需要密码" tipvaluecolor="#FF875D38" password="true"  textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " eyestatusimage="COMM_WIDGET\EDIT_BT_EYE.png" />
+			</HorizontalLayout>
+			<Control height="5"/>
+			<HorizontalLayout height="37"> <!--存入，取出按钮-->
+				<Control />
+				<Button name="ButtonIn" width="104" height="37" statusimage="file='DLG_BOX_INSURE\BT_SAVE.png' " />
+				<Control width="18"/>
+				<Button name="ButtonOut" width="104" height="37" statusimage="file='DLG_BOX_INSURE\BT_TAKE.png' " />
+				<Control />
+			</HorizontalLayout>
+		</VerticalLayout>
+		<Control height="5"/>
+		<Control width="720" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+		<Control height="10"/>
+		<HorizontalLayout height="38" > 
+			<Control width="20"/>
+			<Text name="TextTakeTax" height="38" valign="center"  textcolor="#FF875D38" linespace="5" text="提示：游戏中只可以取出，不可以存入。" />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

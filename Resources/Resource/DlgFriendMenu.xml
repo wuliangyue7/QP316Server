@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="7,7" bktrans="true">
+  <Default name="Menu" value="itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='PLAZA_MENU\menu_bk.png' corner='30,10,10,10' &quot; itemselectedimage=&quot;file='PLAZA_MENU\menu_select.png' corner='4,4,4,4' source='0,0,0,0'&quot; itemselectedbkcolor=&quot;#00000000&quot; itemdisabledbkcolor=&quot;#00000000&quot;" />
+  <Menu inset="6,8,6,6" bkcolor="#00000000">
+    <MenuElement name="MenuFriendAll" text="全部好友" height="20" icon=" " iconsize="16,16" />
+	<MenuElement linetype="true" linecolor="#FFCBBD92" height="3"/>
+    <MenuElement name="MenuFriendOnline" text="在线好友" height="20" icon=" " iconsize="16,16"/>
+  </Menu>
+</Window>

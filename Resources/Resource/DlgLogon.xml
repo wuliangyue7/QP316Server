@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="516,420" sizebox="5,5,5,5" roundcorner="7,7" caption="0,0,0,38" >
+	<HorizontalLayout bkimage="file='DLG_BOX_LOGON\DLG_LOGON_BACK.png'">
+		<Label name="LableLOGO" float="true" pos="4,3,0,0" autosize="true" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+		<Label name="LableTITLE" float="true" pos="26,4,0,0" autosize="true" bkimage="file='COMM_TITLE\TITLE_LOGON.png' "/>
+		<Button name="ButtonMin" float="true" pos="450,0,482,28" statusimage="file='COMM_WIDGET\BT_MIN.png' "/>
+		<Button name="ButtonClose" float="true" pos="480,0,512,28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+		<Button name="ButtonWebLink1" float="true" pos="25,38,110,58" tag="1" statusimage="file='DLG_BOX_LOGON\BT_LOGON_LINK_1.png' "/>
+		<Button name="ButtonWebLink2" float="true" pos="153,38,238,58" tag="2" statusimage="file='DLG_BOX_LOGON\BT_LOGON_LINK_2.png' "/>
+		<Button name="ButtonWebLink3" float="true" pos="278,38,363,58" tag="3" statusimage="file='DLG_BOX_LOGON\BT_LOGON_LINK_3.png' "/>
+		<Button name="ButtonWebLink4" float="true" pos="405,38,490,58" tag="4" statusimage="file='DLG_BOX_LOGON\BT_LOGON_LINK_4.png' "/>
+		<WkeBrowser name="WebBrowserLogonAd" float="true" pos="8,64,508,184" bkcolor="#00000000"/>
+		<EditCombo name="ComboServer" float="true" pos="150,236,372,270" font="6" bkcolor="#00000000" textcolor="#FFFF9900" textpadding="10,3,8,3" dropboxsize="0,150" dropboxbordersize="0" itemtextpadding="6,0,0,0" itemfont="6" itemtextcolor="#FFFFFFFF" itemselectedtextcolor="#FFFFFFFF" itemselectedbkcolor="#FF443E72" itemhottextcolor="#FFFFFFFF" itemhotbkcolor="#FF443E72" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file='DLG_BOX_LOGON\LOGON_EDIT_NORMAL.png' " hotimage="file='DLG_BOX_LOGON\LOGON_EDIT_HOT.png' " focusedimage="file='DLG_BOX_LOGON\LOGON_EDIT_FOCUSE.png' " eyestatusimage="DLG_BOX_LOGON\LOGON_EDIT_DOWND.png" dropboxbkimage="file='DLG_BOX_LOGON\dropboxbk.png' corner='10,10,10,10'" itemhotimage="file='DLG_BOX_LOGON\itembk.png' corner='8,8,8,8'"/>
+		<EditCombo name="ComboAccounts" float="true" pos="150,276,372,310" font="6" tipvalue="帐号" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" textcolor="#FFFF9900" textpadding="10,3,8,3" dropboxsize="0,150" dropboxbordersize="0" itemtextpadding="6,0,0,0" itemtextcolor="#FFFFFFFF" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FF000000" itemhottextcolor="#FFFFFFFF" itemhotbkcolor="#FF000000" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file='DLG_BOX_LOGON\LOGON_EDIT_NORMAL.png' " hotimage="file='DLG_BOX_LOGON\LOGON_EDIT_HOT.png' " focusedimage="file='DLG_BOX_LOGON\LOGON_EDIT_FOCUSE.png' " eyestatusimage="file='DLG_BOX_LOGON\LOGON_EDIT_DOWND.png'" dropboxbkimage="file='DLG_BOX_LOGON\dropboxbk.png' corner='10,10,10,10'" itemhotimage="file='DLG_BOX_LOGON\itembk.png' corner='8,8,8,8'"/>
+		<Edit name="EditPassword" float="true" pos="150,316,372,350" font="6" eyestatusimage="DLG_BOX_LOGON\BT_EDIT_EYE.png" tipvalue="密码" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF9900" textpadding="10,3,8,3" textcolor="#FFFF9900" disabledtextcolor="#00000000" normalimage="file='DLG_BOX_LOGON\LOGON_EDIT_NORMAL.png' " hotimage="file='DLG_BOX_LOGON\LOGON_EDIT_HOT.png' " focusedimage="file='DLG_BOX_LOGON\LOGON_EDIT_FOCUSE.png' "/>
+		<Button name="ButtonRegister" float="true" pos="262,365,374,396" statusimage="file='DLG_BOX_LOGON\BT_REGISTER.png' "/>
+		<Button name="ButtonLogon" float="true" pos="378,233,482,334" statusimage="file='DLG_BOX_LOGON\BT_ENTER.png' "/>
+		<Label name="LableReMPswd" float="true" pos="174,370,0,0" autosize="true" bkimage="file='DLG_BOX_LOGON\LOGON_REMEMBER_PASSWORD.png' "/>
+		<CheckButton name="CheckButtonPasswd" float="true" pos="150,367,230,389" normalstatusimage="file='DLG_BOX_LOGON\LOGON_UNCHECK.png'" checkedstatusimage="file='DLG_BOX_LOGON\LOGON_CHECKED.png'"/>
+	</HorizontalLayout>
+</Window>

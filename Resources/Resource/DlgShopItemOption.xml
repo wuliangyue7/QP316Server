@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Option group="GroupShop" bindtablayoutname="TabLayoutShop" bindtabindex="0" text="推荐游戏" height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' " selected="true" />
+</Window>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,200" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_400_200.png' ">
+		<HorizontalLayout height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_OPEN_INSURE.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<VerticalLayout >
+			<HorizontalLayout >
+				<Control />
+				<VerticalLayout width="240">
+					<Control height="35"/>
+					<VerticalLayout >
+						<Control />
+						<Text  height="28"   align="center" text="为了您的账号安全，请您尽快开通我的银行!" textpadding="0,0,0,0" textcolor="#FFFFCC99"/>
+						<Control />					
+					</VerticalLayout>
+					<Control height="15"/>
+				</VerticalLayout>
+				<Control />
+			</HorizontalLayout>
+			<Control height="15"/>
+			<Label name="LableLine" width="400" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_400_2.png' "/>
+			<Control height="15"/>				
+			<HorizontalLayout height="37"  childpadding="20">	
+				<Control />
+				<Button name="ButtonComfirm" statusimage="file='COMM_WIDGET\BT_OK.png' "/>
+				<Button name="ButtonCancle" statusimage="file='COMM_WIDGET\BT_CANCEL.png' "/>
+				<Control />
+			</HorizontalLayout>				
+		</VerticalLayout>
+		<Control height="18"/>
+    </VerticalLayout>
+</Window>

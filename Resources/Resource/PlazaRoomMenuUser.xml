@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="7,7" bktrans="true">
+  <Default name="Menu" value="itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='PLAZA_MENU\menu_bk2.png' corner='30,10,10,10' &quot; itemselectedimage=&quot;file='PLAZA_MENU\menu_select.png' corner='4,4,4,4' source='0,0,0,0'&quot; itembkcolor=&quot;#00000000&quot; itemselectedbkcolor=&quot;#00000000&quot; itemdisabledbkcolor=&quot;#00000000&quot;" />
+  <Menu inset="6,10,6,6" bkcolor="#00000000">
+	<MenuElement width="250" height="93" selectenable="false" bkcolor="#00000000"> <!-- 菜单头像部分-->
+		<HorizontalLayout bkcolor="#00000000"> 
+			<Control width="5"/>
+           <Container width="62" height="62"> <!--头像-->
+				<HorizontalLayout width="62" height="62" inset="6,6,0,0" bkimage="file='COMM_WIDGET\USER_LABEL_BORDER.png' ">
+					<Label  width="48" height="48" bkimage="file='AVATAR_48_48\001.png' "/>
+				</HorizontalLayout>
+				<Button name="ButtonPersonalCenter" width="62" height="62" statusimage="file='PLAZA_MAIN\USER_BT_FACE.png' "/>
+				<!--Progress name="experience" /-->
+			</Container>
+			<Control width="5"/>
+			<VerticalLayout>
+				<HorizontalLayout height="20">
+					<Label text="昵称：" width="40" align="right" textcolor="#FFB59253" />
+					<Label showhtml="true" text="{i PLAZA_MAIN\USER_LABEL_VIP_M.png 5 2}" width="18"/>
+					<Label name="nickname"  text="Dragon" textcolor="#FF715124" width="67"/>
+					<Button name="ButtonCopyName" width="36" height="20" text="复制" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="18">
+					<Label text="ID：" width="40" align="right" textcolor="#FFB59253" />
+					<Label name="idname" text="123456" textcolor="#FF715124" width="85"/>
+					<Button name="ButtonCopyName" width="36" height="20" text="复制" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="18">
+					<Label text="级别：" width="40" align="right" textcolor="#FFB59253" />
+					<Label name="levelname" text="农场主[十三张]" textcolor="#FF715124" width="85"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="0">
+					<Label text="签名：" width="40" height="18" align="right" textcolor="#FFB59253" />
+					<Text name="sigin" text="像我这样的高手....可是相当相当的寂寞！" valign="top" linespace="3" textcolor="#FF715124" width="125" textpadding="0,3,0,0"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+        </HorizontalLayout>
+	</MenuElement>
+	<MenuElement linetype="true" linecolor="#FFCBBD92" height="3" linepadding="2,0,2,0"/> <!--这里是真正的菜单项-->
+    <MenuElement text="旁观[ Dragon ]游戏" height="21" textpadding="10,0,0,0" selectenable="false" bkcolor="#00000000" disabledtextcolor="#FFA5A39E"/>
+	<MenuElement text="坐到[ Dragon ]的游戏桌" height="21" selectenable="false" bkcolor="#00000000" disabledtextcolor="#FFA5A39E"/>
+	<MenuElement text="邀请[ Dragon ]一起玩游戏" height="21" bkcolor="#00000000" disabledtextcolor="#FFA5A39E"/>
+	<MenuElement linetype="true" linecolor="#FFCBBD92" height="7" linepadding="2,0,2,0"/>
+    <MenuElement height="60" selectenable="false" bkcolor="#00000000"> <!--积分信息部分-->
+		<VerticalLayout>
+			<HorizontalLayout height="18">
+				<Label text="积分/经验值：" width="100" align="right" textcolor="#FFB59253" />
+				<Label name="jifen" text="1580/50000" textcolor="#FF715124" />
+			</HorizontalLayout>
+			<HorizontalLayout height="18">
+				<Label text="总/胜/负/和局：" width="100" align="right" textcolor="#FFB59253" />
+				<Label name="shengfu" text="1580/1000/500/80" textcolor="#FF715124" />
+			</HorizontalLayout>
+			<HorizontalLayout height="18">
+				<Label text="胜率/逃跑：" width="100" align="right" textcolor="#FFB59253" />
+				<Label name="shenglv" text="58.54%/40.01%" textcolor="#FF715124" />
+			</HorizontalLayout>
+		</VerticalLayout>
+	</MenuElement>
+	<MenuElement linetype="true" linecolor="#FFCBBD92" height="3" linepadding="2,0,2,0"/>
+	<MenuElement height="30" selectenable="false" bkcolor="#00000000"> <!--按钮部分-->
+		<HorizontalLayout>
+			<Control />
+			<Button width="57" height="24" text="加为好友" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+			<Button width="57" height="24" text="设为厌恶" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+			<Button width="57" height="24" text="私聊" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+			<Button width="57" height="24" text="交谈" textcolor="#FFB59253" hottextcolor="#FF715124" pushedtextcolor="#FF715124"/>
+			<Control />
+		</HorizontalLayout>
+	</MenuElement>
+  </Menu>
+</Window>

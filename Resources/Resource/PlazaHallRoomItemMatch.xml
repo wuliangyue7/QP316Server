@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container width="258" height="132" bkimage="file='PLAZA_HALL_ROOM\LABEL_ROOM_BACK_1.png'">
+		<Button visible="true" name="ItemRoomMatchSelect" width="252" height="132" statusimage="file='PLAZA_HALL_ROOM\BUTTON_ROOM_SELECT3.png' "/>
+		<VerticalLayout mouse="false">
+			<HorizontalLayout mouse="false" height="40" inset="10,2,10,0">
+				<VerticalLayout mouse="false" width="110" >
+					<Control mouse="false" />
+					<Label mouse="false" name="ItemRoomMatchName" text="定时赛" height="20" width="100"  />
+					<Control mouse="false" />
+				</VerticalLayout>
+				<Control mouse="false" />
+				<VerticalLayout mouse="false" height="40" width="24" >
+					<Control mouse="false" />
+					<HorizontalLayout height="24" mouse="false" >
+						<Control mouse="false" />
+						<Label mouse="false" name="ItemRoomMatchPassWord" width="24" height="24"  visible="false" bkimage="file='PLAZA_HALL_ROOM\TYPE_PASSWORD.png'"/>
+					</HorizontalLayout >
+					<Control mouse="false" />
+				</VerticalLayout>
+				<VerticalLayout mouse="false" width="102" >
+					<Control mouse="false" />
+					<Label mouse="false" name="ItemRoomMatchType" width="102" height="31" bkimage="file='PLAZA_HALL_ROOM\TYPE_MATCH.png'"/>
+					<Control mouse="false" />
+				</VerticalLayout>
+			</HorizontalLayout >
+			<HorizontalLayout  mouse="false"   >
+				<Control  mouse="false"  />
+				<VerticalLayout  mouse="false"  width="220">
+					<HorizontalLayout  mouse="false" height="25" >
+						<HorizontalLayout  mouse="false"  >	
+							<Label  mouse="false" text="报名费用："  width="60"  textcolor="#FF232577" />
+							<Label  mouse="false" name="ItemRoomMatchSignFree" text="免费" visible="false" width="160"  textcolor="#FF99FF00" />
+							<Label  mouse="false" name="ItemRoomMatchSignScore" text="500元宝"  width="160"  textcolor="#FFFFFF00" />
+						</HorizontalLayout>							
+					</HorizontalLayout>
+					<HorizontalLayout mouse="false" height="28">
+						<HorizontalLayout  mouse="false" height="28" width="110">
+							<HorizontalLayout  mouse="false"  >
+								<Label  mouse="false"  text="比赛规则：" width="60" textcolor="#FF232577" />
+								<Label  mouse="false" name="ItemRoomMatchRuleName" text="人满开赛"  width="70" textcolor="#FFFFFF00" />
+							</HorizontalLayout>	
+						</HorizontalLayout>	
+						<Control mouse="false" width="10"/>
+						<HorizontalLayout  mouse="false" width="110">	
+							<Label  mouse="false" text="用户："    width="40" textcolor="#FF314900" />
+							<Label  mouse="false" name="ItemRoomUserAll" text="所有玩家" visible="false"  width="70" textcolor="#FF99FF00" />
+							<HorizontalLayout  mouse="false" name="ItemRoomUserVip"  width="70">
+								<VerticalLayout mouse="false" width="20" >
+									<Control mouse="false" />
+									<Container mouse="false" width="15" height="15" >
+										<Label mouse="false" name="ItemRoomVipLevel0" visible="false" bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='0,0,15,15'"/>
+										<Label mouse="false" name="ItemRoomVipLevel1" visible="false" bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='15,0,30,15'"/>
+										<Label mouse="false" name="ItemRoomVipLevel2" visible="true"  bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='30,0,45,15'"/>
+										<Label mouse="false" name="ItemRoomVipLevel3" visible="false" bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='45,0,60,15'"/>
+										<Label mouse="false" name="ItemRoomVipLevel4" visible="false" bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='60,0,75,15'"/>
+										<Label mouse="false" name="ItemRoomVipLevel5" visible="false" bkimage="file='PLAZA_USER_INFO\LABEL_VIP.png' source='75,0,90,15'"/>
+									</Container>
+									<Control mouse="false" />
+								</VerticalLayout>
+								<Label  mouse="false" text="会员"  width="55"  textcolor="#FFFFFF00" />
+							</HorizontalLayout>						
+						</HorizontalLayout>
+							
+					</HorizontalLayout>
+					<HorizontalLayout  mouse="false"  height="28">	
+						<Label  mouse="false" name="ItemRoomMatchTime"  text="比赛时间：" width="60" textcolor="#FF232577" />
+						<Label  mouse="false" name="ItemRoomMatchCondition"  text="开赛条件：" width="60" textcolor="#FF232577" />
+						<Label  mouse="false" name="ItemRoomMatchRuleContext"  text="00:00-24:00开赛" width="130" textcolor="#FFFFFFFF" align="left"/>
+					</HorizontalLayout>						
+				</VerticalLayout>
+				<Control  mouse="false" />
+			</HorizontalLayout>	
+		</VerticalLayout>	
+	</Container>
+</Window>

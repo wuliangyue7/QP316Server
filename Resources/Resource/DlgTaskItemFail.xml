@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="175" height="125" bkimage="DLG_BOX_TASK\LABEL_ITEM_BACK.png" >
+		<Label  float="true" width="67" height="41" relativeside="right" relativepos="67,0" bkimage="file='DLG_BOX_TASK\LABEL_ICO_4.png' "  />	
+		<Control height="2" />		
+		<Label  name="LableName" text="首次绑定手机" font="2"  textpadding="13,0,0,0" textcolor="#FFFFFFFF"  height="26" />
+		<Control height="20" />
+		<Text  	name="TextSummary" text="通过短信验证绑定您的常用手机号码。" textpadding="13,0,10,0" linespace="2" height="30" />
+		<Control height="13" />
+		<Label 	name="TextAward" text="1万游戏币+300元宝" textpadding="13,0,0,0"  width="150" height="15" />
+		<HorizontalLayout name="ContainerVipAward" height="15" inset="13,0,0,0">
+			<Container width="15">						
+				<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+				<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+				<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+				<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+				<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+				<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>	
+			</Container>
+			<Label name="LabelAwardMember" text="奖励20%" textpadding="2,0,0,0"  textcolor="#FFC91E1E"/>			
+		</HorizontalLayout>
+		<Button name="ButtonViewReceiving" float="true" width="175" height="125" pos="0,0,175,125" statusimage="file='DLG_BOX_TASK\BUTTON_SELECT.png'" />	
+	</VerticalLayout>
+</Window>

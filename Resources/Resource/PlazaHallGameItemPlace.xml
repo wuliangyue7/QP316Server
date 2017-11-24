@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="90" height="105"  >
+		<Label name="GameIOC" width="90" height="90" bkimage="file='PLAZA_HALL_GAME\LABEL_SPACE.png'"  />
+	</VerticalLayout>
+</Window>

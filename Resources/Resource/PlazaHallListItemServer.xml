@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<NodeElement maxwidth="187" height="25" inset="30,0,5,0" >
+		<VerticalLayout width="15">
+			<Control />
+			<Label name="GameServerIco"  width="10" height="10" bkimage="file='PLAZA_HALL_LIST\expand_room.png' " />
+			<Control />
+		</VerticalLayout>	
+		<Label name="GameServerName" text="房间名字" width="120" textcolor="#FFFFFFFF" />
+		<Control />
+		<!-- <Label name="GameServerLimit" text="限制条件" width="60" align="right" textcolor="#FFFFCC00" />	 -->
+	</NodeElement>
+</Window>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,410" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_410.png' "> 
+		<HorizontalLayout height="30"> 
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label width="123" height="22" bkimage="file='COMM_TITLE\TITLE_SHOP.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="20"/>
+		<HorizontalLayout >
+			<Control />
+			<VerticalLayout width="420" >
+				<HorizontalLayout height="256">
+					<VerticalLayout width="100" height="256" >
+						<HorizontalLayout height="105">
+							<Control width="2" />
+							<VerticalLayout width="80" inset="0,2,0,0">
+								<Label name="LabelItemShopIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\PROPS_RMB_AGATE.png'"  />
+								<Control height="4"/>
+								<Label name="LableItemShopName" height="22" text="玛瑙" textcolor="#FFFFCC99" align="center"/>			
+							</VerticalLayout>
+							<Control />
+							<Label  float="true" pos="0,0,84,88" bkimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' source='0,0,84,88'"/>	
+						</HorizontalLayout>
+						<Control height="5" />
+						<VerticalLayout width="100" childpadding="10">
+							<RadioButton name="RadioButtonCash"   height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFFFF00" text="500.00游戏豆" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+							<RadioButton name="RadioButtonGold"   height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFFCC00" text="10000游戏币" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+							<RadioButton name="RadioButtonUserMadel"   height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFF9900" text="2000元宝" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+							<RadioButton name="RadioButtonLoveLiness"   height="20" width="100" grouped="true" groupid="1"  autotextpadding="false" textpadding="28,0,0,0" textcolor="#FFFF6600" text="3000魅力值" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' "/>
+						</VerticalLayout>
+					</VerticalLayout>
+					<Control width="5"/>
+					<VerticalLayout width="308" height="256" bkimage="file='DLG_BOX_SHOP\BACK_SHOP_DETAILS.png'" >
+						<VerticalLayout height="60" >
+							<Control />
+							<HorizontalLayout height="28">	
+								<Control />
+								<VerticalLayout width="250" >
+									<HorizontalLayout height="28">	
+										<Label text="购买数量：" width="60" height="28" textcolor="#FF9A6D2B" />
+										<HorizontalLayout height="28">
+											<Button name="ButtonDecrease" statusimage="file='DLG_BOX_SHOP\BUTTON_DECREASE.png'" bindnumbername="NumberBuy" bindnumberstep="-1"/>
+											<Control width="60" />
+											<Number name="NumberBuy" width="60" height="28" textcolor="#FFFF6600" textpadding="4,3,4,3" num="1" range="0,1000"/>
+											<Control />	
+											<Button name="ButtonIncrease" statusimage="file='DLG_BOX_SHOP\BUTTON_INCREASE.png' " bindnumbername="NumberBuy" bindnumberstep="1"/>
+																				
+										</HorizontalLayout>	
+									</HorizontalLayout>	
+								</VerticalLayout>
+								<Control />
+							</HorizontalLayout>
+							<Control height="2" />
+							<HorizontalLayout height="20">
+								<Control />
+								<Text  height="20" width="130" text="背包中拥有该道具数量：" textcolor="#FF875D38" />
+								<Label name="TextlBagNum" height="12" width="60" text="10000" textcolor="#FFFFFF00"  align="center"/>
+								<Text  height="20" width="20" text="个" textcolor="#FF875D38"  />
+								<Control />
+							</HorizontalLayout>
+							
+							<Control height="1" />
+						</VerticalLayout>
+						<VerticalLayout height="130">
+							<Control />
+							<HorizontalLayout height="100" >	
+								<Control />
+								<VerticalLayout width="250" >								
+									<HorizontalLayout height="20">	
+										<Label text="道具价格：" width="60" textcolor="#FF875D38" />
+										<Control />
+										<Label name="LabelPrice" text="1000游戏币/个" width="160"  textcolor="#FFFFCC00" align="right"/>
+									</HorizontalLayout>	
+									<HorizontalLayout name="HoriLayoutDiscount" height="20">	
+										<Label text="折    扣：" width="60"  textcolor="#FF875D38" />
+										<Control />
+										<VerticalLayout height="20" width="160">
+											<Control />
+											<HorizontalLayout name="ContainerVip" height="15" inset="10,0,0,0" >
+												<Control />
+												<Container width="15">						
+													<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+													<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+													<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+													<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+													<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+													<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>	
+												</Container>
+												<Label name="LableShopVip" height="15" width="50" text="VIP9折起" textpadding="4,0,0,0"  textcolor="#FFFF0000" align="right"/>		
+											</HorizontalLayout>	
+											<Control />
+										</VerticalLayout>										
+									</HorizontalLayout >	
+									<HorizontalLayout name="HoriLayoutVIPPrice" height="20">	
+										<Label text="折后价格：" width="60"  textcolor="#FF875D38" />
+										<Control />
+										<Label name="LabelVIPPrice" text="9000游戏币/个" width="160"  textcolor="#FFFFCC00" align="right"/>
+									</HorizontalLayout>	
+									<HorizontalLayout height="20">	
+										<Label text="购买价格：" width="60"  textcolor="#FF875D38" />
+										<Control />
+										<Label name="LabelBuyScore" text="18000游戏币" width="160"  textcolor="#FFFFCC00" align="right"/>
+									</HorizontalLayout>		
+									<HorizontalLayout height="20">	
+										<Label name="LabelBuyTypeName" text="银行存款：" width="60"  textcolor="#FF875D38" />
+										<Control />
+										<Number name="NumberOfTypeScore" width="180" textpadding="4,3,4,3" num="123456789" seg="true" textcolor="#FFFF9900" font="0" align="right"/>	
+									</HorizontalLayout>	
+								</VerticalLayout>
+								<Control />
+							</HorizontalLayout>	
+							<Control />
+						</VerticalLayout>
+						<VerticalLayout height="66">
+							<Control />
+							<HorizontalLayout height="37">	
+								<Control />
+								<HorizontalLayout width="258" height="37"  childpadding="10">	
+									<Button name="ButtonBuyUse" statusimage="file='DLG_BOX_SHOP\BUTTON_BUY_USE.png' "/>
+									<Button name="ButtonBuyIntoBag" statusimage="file='DLG_BOX_SHOP\BUTTON_BUY_INTO_BAG.png' "/>
+								</HorizontalLayout>
+								<Control />
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+					</VerticalLayout>
+					<Control />
+				</HorizontalLayout>	
+				<Control height="20" />
+				<Label  width="470"  height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_470_2.png' "/>
+				<Control height="20" />	
+				<HorizontalLayout height="20" >	
+					<Text text="功能：" height="20" width="60"  textcolor="#FF875D38" linespace="4" />
+					<Text name="TextlUseTip" height="20" width="400" text="使用该道具后，您的游戏积分将恢复至初始状态，不再为负分而烦恼！" textcolor="#FF875D38" linespace="4"/>
+				</HorizontalLayout>	
+				
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

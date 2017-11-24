@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="720,470" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+	<Default name="VScrollBar" value="thumbnormalimage=&quot;file='COMM_WIDGET\VSBAR_THUMB_NOR.png' corner='6,12,6,12' &quot; thumbhotimage=&quot;file='COMM_WIDGET\VSBAR_THUMB_HOT.png' corner='6,12,6,12' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='COMM_WIDGET\VSBAR_THUMB_PUSH.png' corner='6,12,6,12' &quot; thumbdisabledimage=&quot;file=''   &quot; railnormalimage=&quot;file='' &quot; railhotimage=&quot;file='' &quot; railpushedimage=&quot;file=''&quot; raildisabledimage=&quot;file=''&quot; bknormalimage=&quot;file='COMM_WIDGET\VSBAR_BACK.png' corner='6,12,6,12'&quot; bkhotimage=&quot;file='COMM_WIDGET\VSBAR_BACK.png' corner='6,12,6,12'&quot; bkpushedimage=&quot;file='COMM_WIDGET\VSBAR_BACK.png' corner='6,12,6,12'&quot; bkdisabledimage=&quot;file=''&quot; " />
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_720_470.png' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_AVATAR.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Container height="54">	
+			<VerticalLayout inset="12,0,12,0">
+				<Control height="44" bkimage="file='COMM_WIDGET\OPTION_LAYOUT_BACK.png'  corner='20,20,20,15'" />
+			</VerticalLayout>
+			<VerticalLayout >
+				<Control height="7"/>
+				<HorizontalLayout height="41" childpadding="3" inset="20,0,0,0"> 
+					<Option name="OptionStandard"  group="PcOpiton" bindtablayoutname="TabLayoutAvatar" bindtabindex="0" text="系统头像" width="167" height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' " selected="true"/>
+					<Option name="OptionRealInfo"  group="PcOpiton" bindtablayoutname="TabLayoutAvatar" bindtabindex="1" text="自定义头像" width="167" height="41" font="3" selectedfont="3" textcolor="#FFFFCC99" selectedtextcolor="#FF492B18" textpadding="0,0,0,4" selectedtextpadding="0,0,0,8" statusimage="file='COMM_WIDGET\OPTION_BT.png'  corner='20,20,20,15'" selectedimage="file='COMM_WIDGET\OPTION_SELECT.png' corner='20,20,20,15'" selectedrailimage="file='COMM_WIDGET\OPTION_RAIL.png' " />
+				</HorizontalLayout>	
+			</VerticalLayout >
+		</Container>	
+
+		<HorizontalLayout name="SystemAvatar">
+		<HorizontalLayout width="547" height="342"  >
+			<Control width="25"/>
+			<TabLayout name="TabLayoutAvatar" width="522" height="342" inset="0,4,0,0" bkimage="file='DLG_BOX_AVATAR\LABEL_MODIFY_BACK.png'" selectedid="0" >
+				<!--1-->
+				<TileLayout name="TileLayoutSymAvatar" inset="10,10,10,10" width="518" height="335" columns="8" childpadding="12" vscrollbar="true" vscrollbarstyle="width=&quot;12&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;">
+					<Include count="200" source="DlgModifyAvatarItem.xml"/>				
+				</TileLayout>
+				<!--2-->
+				<VerticalLayout>
+					<!--
+					<Control height="68"/>
+					<HorizontalLayout height="45">
+						<Control />
+							<Button name="ButtonLocal" width="194" height="45" statusimage="file='DLG_BOX_AVATAR\BT_LOCAL.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Control height="16"/>
+					<HorizontalLayout height="45" >
+						<Control />
+							<Button name="ButtonSelfie" width="194" height="45" statusimage="file='DLG_BOX_AVATAR\BT_SELFIE.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Control />
+					<VerticalLayout  height="60" inset="20,0,0,0">	
+						<Label text="您可以选择以下方式设置头像："  textcolor="#FF875D38"/>
+						<Label text="本地照片：选择一张本地图片编辑后上传成为头像"  textcolor="#FF875D38"/>
+						<Label text="自拍头像：通过摄像头拍照编辑后上传成为头像"  textcolor="#FF875D38"/>
+					</VerticalLayout>
+					-->
+				</VerticalLayout>
+				<!--3-->
+				<Container width="522" height="342">
+				<VerticalLayout width="522" height="342" inset="0,20,0,0"  bkimage="file='DLG_BOX_AVATAR\LABEL_MODIFY_BACK.png' ">
+					<HorizontalLayout inset="0,0,0,0" >	
+						<Control />
+						<VerticalLayout width="454" height="279"  bkimage="file='DLG_BOX_AVATAR\LABEL_MODIFY_FACE_BACK.png' ">	
+
+						</VerticalLayout>
+					<Control />
+					</HorizontalLayout>
+					<HorizontalLayout  height="63" inset="20,20,20,0" childpadding="20">	
+						<Button name="ButtonLock" statusimage="file='DLG_BOX_AVATAR\BT_RETURN.png' "/>
+						<Control />
+						<Button name="ButtonLock" statusimage="file='DLG_BOX_AVATAR\BT_ROTATION_CW.png' "/>
+						<Button name="ButtonLock" statusimage="file='DLG_BOX_AVATAR\BT_ROTATION_CCW.png' "/>
+						<Button name="ButtonLock" statusimage="file='DLG_BOX_AVATAR\BT_CORNER.png' "/>
+					</HorizontalLayout>
+				</VerticalLayout>					
+			</Container>
+			</TabLayout>
+		</HorizontalLayout>	
+				
+			<HorizontalLayout inset="0,0,20,0">	
+				<Control />
+				<VerticalLayout width="112">	<!--头像预览-->
+					<Label name="LableIcon" width="67" height="18" bkimage="file='DLG_BOX_AVATAR\LABEL_PREVIEW_TITLE.png' "/>
+					<HorizontalLayout width="112" height="112" inset="8,8,0,0" >
+						<ImageEx  name="AvatarPreview" width="96" height="96" size="96,96" image="file='AVATAR_96_96\001.png' "/>
+						<Label float="true" width="112" height="112" bkimage="file='COMM_WIDGET\LABEL_AVATAR_112_112.png' "/>
+					</HorizontalLayout>
+					<Control height="140"/>
+					<HorizontalLayout>	
+						<Control />
+						<VerticalLayout height="84" width="94" childpadding="10">	
+							<Button name="ButtonOk" statusimage="file='COMM_WIDGET\BT_OK.png' "/>
+							<Button name="ButtonCancel" statusimage="file='COMM_WIDGET\BT_CANCEL.png' "/>
+						</VerticalLayout>
+						<Control />
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control />
+			</HorizontalLayout>	
+		</HorizontalLayout>	
+    </VerticalLayout>
+</Window>

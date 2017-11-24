@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container>
+		<Container inset="3,46,3,10">
+			<HorizontalLayout inset="0,16,0,0" bkimage="file='PLAZA_HALL_MAIN\MID_LAYOUT_BACK.png'  xtiled='true' ytiled='true'">
+			</HorizontalLayout>	
+			<Control bkimage="file='PLAZA_HALL_MAIN\MID_LAYOUT_EFFECT_LIGHT.png' " />
+		</Container>
+		<HorizontalLayout inset="0,7,0,7" >
+			<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\MID_LAYOUT_BORDER_L.png'  corner='25,80,268,80'">
+			</HorizontalLayout>	
+			<HorizontalLayout bkimage="file='PLAZA_HALL_MAIN\MID_LAYOUT_BORDER_R.png'  corner='268,80,25,80'">
+			</HorizontalLayout>	
+		</HorizontalLayout>	
+		<VerticalLayout>
+			<HorizontalLayout height="50" inset="0,12,0,0">
+				<Control />	
+				<HorizontalLayout width="468" childpadding="2">
+					<Control width="92"  height="38" bkimage="file='PLAZA_HALL_MAIN\MID_BT_GAME.png'  "/>
+					<Button name="ButtonMidRecharge" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_RECHARGE.png' "/>
+					<Button name="ButtonMidShop" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_SHOP.png' "/>
+					<Button name="ButtonMidBag" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_BAG.png' "/>
+					<Button name="ButtonMidBank" width="92" height="34" statusimage="file='PLAZA_HALL_MAIN\MID_BT_BANK.png' "/>
+				</HorizontalLayout>
+				<Control />	
+			</HorizontalLayout>	
+			<HorizontalLayout height="80" >
+				<VerticalLayout inset="15,0,0,0" width="200" height="70" >
+					<HorizontalLayout height="30"  inset="0,5,5,0">
+						<Label  text="您的位置："  width="60" height="20" textcolor="#FF9A6D2B"/>	
+						<Label  text="游戏大厅>"  width="55" height="20" textcolor="#FFDBB783" />
+						<Label name="LabelGameName" text="斗地主"  width="100" height="20" textcolor="#FFDBB783" />
+					</HorizontalLayout>
+					<Button name="ButtonReturnHall" width="100" height="33" statusimage="file='PLAZA_HALL_ROOM\BUTTON_RETURN_HALL.png' "/>
+				</VerticalLayout>
+				<VerticalLayout inset="0,10,0,0">
+					<HorizontalLayout >
+						<Control />	
+						<Label  name="LabelGameTile" width="210" height="70" bkimage="file='PLAZA_HALL_ROOM\TITLE_DDZ.png' "/>	
+						<Control />	
+					</HorizontalLayout>
+				</VerticalLayout>				
+				<HorizontalLayout width="180"  inset="0,5,15,0" >
+					<Control />
+					<Button name="ButtonGameRule" width="69" height="20" statusimage="file='PLAZA_HALL_ROOM\BUTTON_RULE.png' "/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+			<PageLayout  name="HallRoomMain" itemsize="258,132" pagebar="true" inset="35,5,35,25" pagebarstyle="PageBarSytlePlaza">	
+				<Include count="7" source="PlazaHallRoomItem.xml"/>
+			</PageLayout>	
+			<Container height="55">
+			</Container>
+		</VerticalLayout>
+	</Container>
+</Window>

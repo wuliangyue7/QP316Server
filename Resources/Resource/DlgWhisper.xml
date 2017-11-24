@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="580,480" sizebox="5,5,5,5" roundcorner="7,7" caption="0,0,0,38" >
+	<HorizontalLayout name="HorizontalLayoutUI" width="580" height="480" bkimage="file='DLG_BOX_FRIEND\DLG_WHISPER_BACK.png' corner='30,50,30,20' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34" >
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_WHISPER.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="68" inset="0,2,0,0">
+			<Button name="ButtonMin" width="32" height="28" statusimage="file='COMM_WIDGET\BT_MIN.png' "/>
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		
+	</HorizontalLayout>
+</Window>

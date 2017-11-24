@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container mouse="false">
+		<VerticalLayout mouse="false">
+			<Control mouse="false"/>	
+			<VerticalLayout mouse="false" height="42">
+				<Control height="5" mouse="false"/>
+				<VerticalLayout mouse="false" height="15">
+				<HorizontalLayout mouse="false">
+					<Control width="30" mouse="false"/>
+<!-- 					<Label width="40" height="15" bkimage="file='PLAZA_HALL_MAIN\LABEL_MARQUEE.png' "/> -->
+					<Control width="10" mouse="false"/>
+					<WkeBrowser name="WebBrowserMarquee" bkcolor="#0000000" />
+					<Control width="30" mouse="false"/>
+				</HorizontalLayout>	
+				</VerticalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+	</Container>
+</Window>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Container width="52" height="52">
+		<Control float="true" pos ="2,2,50,50" width="48" height="48"  padiing="2,2" bkimage="file='AVATAR_48_48\001.png' "/>
+		<Option  float="true" pos ="0,0,52,52" width="52" height="52" group="avatar_group" statusimage="DLG_BOX_AVATAR\BT_SELECT.png" selectedimage="DLG_BOX_AVATAR\OP_SELECT.png"/>	
+	</Container>
+</Window>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<ListComboElement height="30" DeleteStatusImage="file='DLG_BOX_LOGON\BT_CLOSE.png'"  font="6" textcolor="#FFFFFFFF"/>
+</Window>

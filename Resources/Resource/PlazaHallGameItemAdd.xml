@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="90" height="105" >
+		<Button name="ButtonAddGame" width="90" height="105" statusimage="file='PLAZA_HALL_GAME\BUTTON_ADD_GAME.png'"/>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >	
+	<VerticalLayout >
+		<VerticalLayout >
+			<Control height="25"/>
+			<Container >
+				<HorizontalLayout >
+					<Control />
+					<VerticalLayout width="510" >
+						<Control />
+						<HorizontalLayout height="100">
+							<Control />
+							<VerticalLayout width="330" height="100">
+								<HorizontalLayout height="36">>
+									<Label  width="10" height="34" text="*" align="left" textcolor="#FFFF0000" font="0"/>
+									<Label  width="60" height="34" text="真实姓名：" align="right" textcolor="#FFFFCC99" font="0"/>
+									<Edit name="EditRealName" width="222" height="34"  font="6" tipvalue="真实姓名" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF6600" textpadding="10,3,8,3" textcolor="#FFFF6600" disabledtextcolor="#FFBF9059" normalimage="file='COMM_WIDGET\EDIT_NOR.png'  corner='10,10,10,10'" hotimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10'" focusedimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10' " disabledimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10' "/>
+								</HorizontalLayout>
+								<Control />
+								<HorizontalLayout height="36">
+									<Label  width="10" height="34" text="*" align="left" textcolor="#FFFF0000" font="0"/>
+									<Label  width="60" height="34" text="身份证号：" align="right" textcolor="#FFFFCC99" font="0"/>
+									<Edit name="EditIDNumber" width="222" height="34"  font="6" tipvalue="身份证号" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF6600" textpadding="10,3,8,3" textcolor="#FFFF6600" disabledtextcolor="#FFBF9059" normalimage="file='COMM_WIDGET\EDIT_NOR.png'  corner='10,10,10,10'" hotimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10'" focusedimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10' " disabledimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10' "/>
+								</HorizontalLayout>		
+							</VerticalLayout>
+							<Control />
+						</HorizontalLayout>
+						<Control height="40"/>
+						<Control />				
+					</VerticalLayout>	
+					<Control />					
+				</HorizontalLayout>	
+				<VerticalLayout name="ContainerRealAuthTipPassFlag" visible="false">
+					<Control height="40"/>
+					<HorizontalLayout  >	
+						<Control width="420" />
+						<Label width="124" height="110" bkimage="file='DLG_BOX_INDIVIDUAL\LABEL_TIP_AUTH_PASSFLAG.png' "/>
+						<Control />
+					</HorizontalLayout>	
+				</VerticalLayout>
+			</Container>
+		</VerticalLayout >
+		<Container height="68">
+			<VerticalLayout name="ContainerRealAuthTipPass" visible="false">
+				<Control height="1"/>
+				<HorizontalLayout  >	
+					<Control />
+					<Label width="326" height="26" bkimage="file='DLG_BOX_INDIVIDUAL\LABEL_TIP_AUTH_PASS.png' "/>
+					<Control />
+				</HorizontalLayout>				
+			</VerticalLayout>
+			<VerticalLayout name="ContainerRealAuth">
+				<Control height="15"/>
+				<Label name="LableLine" width="720" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+				<Control height="15"/>			
+				<HorizontalLayout  >			
+					<Text width="280"  linespace="6" valign="top" text="提示：为了保障您的帐号安全，实名认证需要提供登录密码进行身份验证。" textpadding="30,0,0,0" textcolor="#FF875D38"/>		
+					<Control />
+					<HorizontalLayout  width="370" inset="0,0,30,0" childpadding="10">
+						<VerticalLayout>
+							<Control />
+							<Label width="64" text="登录密码："  textcolor="#FFFF6600"/>
+							<Control />
+						</VerticalLayout>
+						<Edit name="EditRealAuthPW" width="172" height="34"  font="6" password="true" eyestatusimage="COMM_WIDGET\EDIT_BT_EYE.png" tipvalue="登录密码" tipvaluecolor="#FF7F7F7F" bkcolor="#00000000" nativebkcolor="#FFFF9900" textpadding="10,3,8,3" textcolor="#FFFF9900" disabledtextcolor="#FFBF9059" normalimage="file='COMM_WIDGET\EDIT_NOR.png'  corner='10,10,10,10'" hotimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10'" focusedimage="file='COMM_WIDGET\EDIT_HOT.png'  corner='10,10,10,10' " disabledimage="file='COMM_WIDGET\EDIT_ENA.png'  corner='10,10,10,10' "/>
+						<Button name="ButtonRealAuthComfirm" statusimage="file='COMM_WIDGET\BT_OK.png' "/>
+					</HorizontalLayout>	
+				</HorizontalLayout>	
+			</VerticalLayout>
+		</Container>	
+		<Control height="5"/>				
+	</VerticalLayout>
+</Window>

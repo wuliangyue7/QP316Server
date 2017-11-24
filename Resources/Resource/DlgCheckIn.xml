@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="600,420" sizebox="5,5,5,5" caption="0,0,0,34" roundcorner="5,5">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_600_420.png' ">
+        <Label name="LableIcon" float="true" pos="3,2" width="24" height="24" bkimage="file=&apos;COMM_LOGO\LOGO_24_24.png&apos; " />
+        <Label name="LableTitle" float="true" pos="26,3" width="123" height="22" bkimage="file=&apos;COMM_TITLE\TITLE_CHECKIN.png&apos; " />
+        <Button name="ButtonClose" float="true" pos="565,2" width="32" height="28" statusimage="file=&apos;COMM_WIDGET\BT_CLOSE.png&apos; " />
+        <Control name="ControlUI3" float="true" pos="190,53" width="198" height="24" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_SIGN_DAY_TIP.png&apos;" />
+        <Number name="NumberSignData" float="true" pos="329,45" width="33" height="37" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_SIGN_DAY_NUM.png&apos;" num="2" format="0123456789" />
+        <HorizontalLayout name="HorizontalLayoutUI1" float="true" pos="0,100" width="600" height="117" childpadding="3">
+            <Control name="ControlUI1" />
+            <VerticalLayout name="SignLayoutDay1" width="74">
+                <Label name="Label_CARD_BACK1" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="1" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn1" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST1.png&apos;" />
+                <Label name="LabelDaySignIn1" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST1_OPEN.png&apos;" />
+                <Number name="NumberSignMoney1" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal1" float="true" pos="5,28" width="64" height="52" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow1" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay2" width="74">
+                <Label name="Label_CARD_BACK2" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="2" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn2" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST1.png&apos;" />
+                <Label name="LabelDaySignIn2" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST1_OPEN.png&apos;" />
+                <Number name="NumberSignMoney2" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal2" float="true" pos="5,28" width="64" height="52" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow2" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay3" width="74">
+                <Label name="Label_CARD_BACK3" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="3" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn3" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST3.png&apos;" />
+                <Label name="LabelDaySignIn3" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST3_OPEN.png&apos;" />
+                <Number name="NumberSignMoney3" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal3" float="true" pos="5,28" width="64" height="52" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow3" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay4" width="74">
+                <Label name="Label_CARD_BACK4" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="4" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn4" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST3.png&apos;" />
+                <Label name="LabelDaySignIn4" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST3_OPEN.png&apos;" />
+                <Number name="NumberSignMoney4" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal4" float="true" pos="5,28" width="64" height="52" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow4" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay5" width="74">
+                <Label name="Label_CARD_BACK5" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="5" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn5" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST4.png&apos;" />
+                <Label name="LabelDaySignIn5" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST4_OPEN.png&apos;" />
+                <Number name="NumberSignMoney5" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal5" float="true" pos="5,28" width="64" height="52" bvisible="false" kimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow5" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay6" width="74">
+                <Label name="Label_CARD_BACK6" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="6" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn6" float="true" pos="5,28" width="64" height="61" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST4.png&apos;" />
+                <Label name="LabelDaySignIn6" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST4_OPEN.png&apos;" />
+                <Number name="NumberSignMoney6" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" num="0" format="0123456789" />
+                <Label name="LabelCheckInSeal6" float="true" pos="5,28" width="64" height="52" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow6" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout name="SignLayoutDay7" width="74">
+                <Label name="Label_CARD_BACK7" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_BACK.png&apos;" />
+                <Number name="NumberDay" float="true" pos="15,8" width="16" height="14" showhtml="true" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY_NUM.png&apos;" num="7" format="0123456789" />
+                <Label name="LabelDay" float="true" pos="28,6" width="30" height="19" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_DAY.png&apos;" />
+                <Label name="LabelDayUnSignIn7" float="true" pos="5,28" width="64" height="61"  bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST5.png&apos;" />
+                <Label name="LabelDaySignIn7" float="true" pos="5,28" width="64" height="61" visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHEST5_OPEN.png&apos;" />
+                <Number name="NumberSignMoney7" float="true" pos="4,89" width="64" height="20" showhtml="true" align="center" numberimage="file=&apos;DLG_BOX_CHECKINNEW\LAEBL_MONEY_NUM.PNG&apos;" format="0123456789" />
+                <Label name="LabelCheckInSeal7" float="true" pos="5,28" width="64" height="52"  visible="false" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CHECKIN_SEAL.png&apos;" />
+                <Label name="LabeCardShadow7" float="true" pos="0,0" width="74" height="117" bkimage="file=&apos;DLG_BOX_CHECKINNEW\LABEL_CARD_SHADOW.png&apos;" />
+            </VerticalLayout>
+            <Control name="ControlUI10" />
+        </HorizontalLayout>
+        <Button name="ButtonCheckIn" float="true" pos="215,244" width="164" height="52" enabled="false" statusimage="DLG_BOX_CHECKINNEW\BT_SIGN.png" />
+        <HorizontalLayout name="HorizontalLayoutUI3" float="true" pos="2,314" width="600" height="2">
+            <Control name="ControlUI2" />
+            <Control name="ControlUI4" width="556" height="2" bkimage="file=&apos;COMM_WIDGET\LABEL_LINE_556_2.png&apos; " />
+            <Control name="ControlUI5" />
+        </HorizontalLayout>
+        <HorizontalLayout name="HorizontalLayoutUI2" float="true" pos="0,316" width="600" height="104">
+            <VerticalLayout name="VerticalLayoutUI2" float="true" pos="28,23" width="320" height="60">
+                <Label name="LabelUI1" text="1.每日登录游戏签到可领取免费签到奖励" textcolor="#FF875D38" />
+                <Label name="LabelUI2" text="2.连续签到获得奖励更多，如签到有间断，则奖励重新计算" textcolor="#FF875D38" />
+                <Label name="LabelUI3" text="3.会员玩家可以额外获得每日专属礼包" textcolor="#FF875D38" />
+            </VerticalLayout>
+            <Button name="ButtonVipPresent" float="true" pos="401,32" width="170" height="34" enabled="false" statusimage="DLG_BOX_CHECKINNEW\BT_VIP.PNG" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

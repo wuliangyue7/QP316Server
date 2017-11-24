@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<VerticalLayout width="84" height="88" >
+		<HorizontalLayout>
+			<Control width="2" />
+			<VerticalLayout width="80" inset="0,2,0,0">
+				<Label name="BagItemPropIOC" width="80" height="80" bkimage="file='DLG_BOX_SHOP\PROPS_RMB_AGATE.png'"  />
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+		<Number name="BagItemPropNum" float="true" pos="0,66,72,78" num="25" align="right" format="0123456789" numberimage="file='DLG_BOX_BAG\NUMBER_BLACK.png' " />
+		<Button visible="true" name="BagItemropSelect" float="true" pos="0,0,84,88" statusimage="file='DLG_BOX_SHOP\PROPS_SELECT.png' "/>
+	</VerticalLayout>
+</Window>

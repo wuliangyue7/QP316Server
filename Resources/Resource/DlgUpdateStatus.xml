@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="420,110" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,110">
+	<HorizontalLayout bkimage="file='DLG_BOX_STATUS\DLG_STATUS_BACK.png' " >
+		<Control />	
+		<VerticalLayout width="342">
+			<Control />	
+			<Label name="LableStatus" text="" width="342" height="20" textcolor="#FFFFCC99" align="center" font="0"/>
+		<!-- 	<Progress name="StatusProgress" width="342" height="21" min="0" max="100" value="0" fgimage="file='DLG_BOX_STATUS\LOGON_PROGRESS.png' source='0,21,342,42' corner='5,5,5,5'" bkimage="file='DLG_BOX_STATUS\LOGON_PROGRESS.png' source='0,0,342,21' corner='5,5,5,5'"/> -->
+			<Progress name="StatusProgress" width="342" height="21" min="0" max="100" value="0" isstretchfore="false" fgimage="file='DLG_BOX_STATUS\PROGRESS_MODIFY.png' " bkimage="file='DLG_BOX_STATUS\PROGRESS_BACK.png' "/>
+			<Control />	
+		</VerticalLayout>
+		<Control />	
+	</HorizontalLayout>
+</Window>

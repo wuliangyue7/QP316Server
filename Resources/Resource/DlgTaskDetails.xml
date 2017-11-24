@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,310" sizebox="5,5,5,5" roundcorner="5,5" caption="0,0,0,34">
+    <VerticalLayout bkimage="file='COMM_BACK\DLG_BACK_470_310.png' ">
+		<HorizontalLayout name="HLayoutUICaption" height="34">
+			<Control width="8"/>
+			<HorizontalLayout width="147" inset="0,4,0,0">
+				<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+				<VerticalLayout width="123" inset="0,1,0,0">
+				<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_TASK_DETAILS.png' "/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+			<HorizontalLayout width="32" inset="0,2,0,0">
+			<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+			</HorizontalLayout>
+			<Control width="4"/>
+		</HorizontalLayout>
+		<Control height="10"/>
+		<VerticalLayout inset="30,0,30,0">
+			<HorizontalLayout height="34" >
+				<HorizontalLayout width="250">
+				<Label text="任务名称:" width="60" height="34" textcolor="#FF875D38"/>
+				<Label name="LabelName" text="步步高升"  height="34" textcolor="#FFFFCC99"/>
+				</HorizontalLayout>	
+				<VerticalLayout inset="0,0,0,0">
+					<Control />
+					<HorizontalLayout name="ContainerVipAward" height="15" inset="0,0,0,0">
+						<Container width="15">						
+							<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+							<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+							<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+							<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+							<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+							<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>	
+						</Container>
+						<Label name="LabelAwardMember" text="奖励20%" textpadding="2,0,0,0"  textcolor="#FFC91E1E"/>			
+					</HorizontalLayout>	
+					<Control />
+				</VerticalLayout>
+			</HorizontalLayout>			
+			<Label width="398" height="2" bkimage="file='DLG_BOX_TASK\LABEL_DASHED_LINE.png' " />
+			<HorizontalLayout height="34" >
+				<Label text="任务进度:" width="60" height="34" textcolor="#FF875D38"/>
+				<Label name="LabelProgress" text="0/1"  height="34" textcolor="#FFFFCC99"/>
+			</HorizontalLayout>
+			<Label width="398" height="2" bkimage="file='DLG_BOX_TASK\LABEL_DASHED_LINE.png' " />
+			<HorizontalLayout height="34" >
+				<Label text="时间限制:" width="60" height="34" textcolor="#FF875D38"/>
+				<Label name="LabelTime" text="1小时"  height="34" textcolor="#FFFFCC99"/>
+			</HorizontalLayout>
+			<Label width="398" height="2" bkimage="file='DLG_BOX_TASK\LABEL_DASHED_LINE.png' " />		
+			<HorizontalLayout height="34" >
+				<Label text="任务说明:" width="60" height="34" textcolor="#FF875D38"/>
+				<Label name="LabelSummary" text="参与x游戏"  height="34" textcolor="#FFFFCC99"/>
+			</HorizontalLayout>
+			<Label width="398" height="2" bkimage="file='DLG_BOX_TASK\LABEL_DASHED_LINE.png' " />		
+			<HorizontalLayout height="34" >
+				<Label text="任务奖励:" width="60" height="34" textcolor="#FF875D38"/>
+				<Label name="LabelAward" text="1000元宝+100金币"  height="34" textcolor="#FFFFCC99"/>
+			</HorizontalLayout>
+			<Label width="398" height="2" bkimage="file='DLG_BOX_TASK\LABEL_DASHED_LINE.png' " />	
+			<Control height="10"/>
+			<HorizontalLayout>
+				<Control />
+				<Container width="164" height="52">
+					<Button name="ButtonReceving"  width="164" height="52" statusimage="file='DLG_BOX_TASK\BUTTON_RECEVING.png' "/>
+					<Button name="ButtonGiveUp"  visible="false" width="164" height="52" statusimage="file='DLG_BOX_TASK\BUTTON_GIVE_UP.png' "/>
+					<Button name="ButtonGet"  visible="false" width="164" height="52" statusimage="file='DLG_BOX_TASK\BUTTON_GET_AWARD.png' "/>
+				</Container>
+				<Control />
+			</HorizontalLayout>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

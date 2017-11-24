@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window sizebox="0,0,0,0" roundcorner="0,0" caption="0,0,0,0" size="784,107" sizebutton="131,107" sizeborder="46,46" sizetypearea="1,10" sizeitemspace="6,12">
+    <HorizontalLayout name="HorizontalLayoutUI1" pos="0,0,100,107" width="784" height="107">
+	<Button name="ButtonGameType1" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_MATCH.png" />
+	<Button name="ButtonGameType2" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_REOMMEND.png" />
+	<Button name="ButtonGameType3" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_CHESS.png" />
+	<Button name="ButtonGameType4" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_MAHJOING.png" />
+	<Button name="ButtonGameType5" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_MONEY.png" />
+	<Button name="ButtonGameType6" float="true" visible="false" height="107" width="131" fadeout="false" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="GAME_TYPE\\GAME_TYPE_ARDER.png" />
+	<Button name="ButtonLeft" float="true" maxheight="38" maxwidth="38" relativeside="left" relativepos="6,30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="file='BT_GAME_TYPE_LEFT' restype='PNG'" />
+	<Button name="ButtonRight" float="true" maxheight="38" maxwidth="38" relativeside="right" relativepos="46,30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" statusimage="file='BT_GAME_TYPE_RIGHT' restype='PNG'" />
+    </HorizontalLayout>	
+</Window>

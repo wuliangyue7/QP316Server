@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<VerticalLayout name="InsureItemWealth" >
+		<VerticalLayout>
+			<Control />
+			<HorizontalLayout height="235">
+				<Control width="40"/>
+				<VerticalLayout width="330"> 
+					<HorizontalLayout height="33">
+						<Label text="携带游戏币：" width="90" font="3" textcolor="#FFFFCC99" />
+						<HorizontalLayout width="222" bkimage="file='COMM_WIDGET\EDIT_ENA_S.png' corner='8,8,8,8'">
+							<Number name="NumberGameScore" width="173" textpadding="7,3,4,3" num="123456789" seg="true" textcolor="#FFFFCC00" font="4" />	
+							<Button name="ButtonGetBaseEnsure" padding="0,4" text="获取" width="44" height="27" statusimage="file='DLG_BOX_INSURE\EDIT_BT.png' corner='8,8,8,8'"/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="33">
+						<Label text="银行游戏币：" width="90" font="3" textcolor="#FFFFCC99" />
+						<HorizontalLayout width="222" bkimage="file='COMM_WIDGET\EDIT_ENA_S.png' corner='8,8,8,8'">
+							<Number name="NumberInsureGameScore" width="173" textpadding="7,3,4,3" num="123456789" seg="true" textcolor="#FFFFCC00" font="4" />	
+							<Button name="ButtonGetScore" padding="0,4" text="存取" width="44" height="27" statusimage="file='DLG_BOX_INSURE\EDIT_BT.png' corner='8,8,8,8'"/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="33">
+						<Label text="游戏豆：" width="90" font="3" textcolor="#FFFFCC99" />
+						<HorizontalLayout width="222" bkimage="file='COMM_WIDGET\EDIT_ENA_S.png' corner='8,8,8,8'">
+							<Number name="NumberGameBean" width="173" textpadding="7,3,4,3" num="123456789" seg="true" textcolor="#FFFFFF00" font="4" />	
+							<Button name="ButtonRecharge" padding="0,4" text="充值" width="44" height="27" statusimage="file='DLG_BOX_INSURE\EDIT_BT.png' corner='8,8,8,8'"/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="33">
+						<Label text="元宝：" width="90" font="3" textcolor="#FFFFCC99" />
+						<HorizontalLayout width="222" bkimage="file='COMM_WIDGET\EDIT_ENA_S.png' corner='8,8,8,8'">
+							<Number name="NumberGameIngot" width="173" textpadding="7,3,4,3" num="123456789" seg="true" textcolor="#FFFF9900" font="4" />	
+							<Button name="ButtonExcharge1" padding="0,4" text="兑换" width="44" height="27" statusimage="file='DLG_BOX_INSURE\EDIT_BT.png' corner='8,8,8,8'"/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="33">
+						<Label text="魅力值：" width="90" font="3" textcolor="#FFFFCC99" />
+						<HorizontalLayout width="222" bkimage="file='COMM_WIDGET\EDIT_ENA_S.png' corner='8,8,8,8'">
+							<Number name="NumberGlamourValue" width="173" textpadding="7,3,4,3" num="123456789" seg="true" textcolor="#FFFF6666" font="4" />	
+							<Button name="ButtonExcharge2" padding="0,4" text="兑换" width="44" height="27" statusimage="file='DLG_BOX_INSURE\EDIT_BT.png' corner='8,8,8,8'"/>
+						</HorizontalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<Control width="30"/>
+				<TileLayout columns="3" childpadding="10" inset="0,8,0,0"> 
+					<Button name="ButtonBaseEnsure"     width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_BASE_ENSURE.png' " />
+					<Button name="ButtonRechargCenter"  width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_RECHARG_CENTER.png' " />
+					<Button name="ButtonMyBag" 		    width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_MY_BAG.png' " />
+					<Button name="ButtonExchange" 	    width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_EXCHANGE.png' " />
+					<Button name="ButtonGameShop"       width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_GAME_SHOP.png' " />
+					<Button name="ButtonRechargeRecrod" width="74" height="91" statusimage="file='DLG_BOX_INSURE\BT_RECHARGE_RECROD.png' " />
+				</TileLayout>
+				<Control width="30"/>
+			</HorizontalLayout>
+			<Control />
+		</VerticalLayout>
+		<Control height="5"/>
+		<Control width="720" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+		<Control height="10"/>
+		<HorizontalLayout height="38"> 
+			<Control width="20"/>
+			<Text textcolor="#FF875D38" height="38" valign="center" linespace="5" text="提示：游戏币除了游戏中获得外还可以通过购买道具获得、魅力兑换获得以及推广获得。" />
+			<HorizontalLayout name="ContainerSetTip" width="340">
+				<Control />
+				<Label name="lableUnSetTip" text="您还未设置银行密码！" width="130" textcolor="#FFFF6600"/>
+				<Button name="ButtonSet"  width="94" height="37" statusimage="file='DLG_BOX_INSURE\BT_IMMEDIATELY_SET.png' " />
+				<Control width="17"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

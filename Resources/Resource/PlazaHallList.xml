@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<Default name="VScrollBar" value="bknormalimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2'&quot; thumbnormalimage=&quot;file='PLAZA_HALL_LIST\VSBAR_THUMB_NOR.png' corner=2,2,2,2' &quot; thumbhotimage=&quot;file='PLAZA_HALL_LIST\VSBAR_THUMB_HOT.png' corner=2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='PLAZA_HALL_LIST\VSBAR_THUMB_PUSH.png' corner=2,2,2,2' &quot; thumbdisabledimage=&quot;file=''   &quot; railnormalimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2' &quot; railhotimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2' &quot; railpushedimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2'&quot; raildisabledimage=&quot;file=''&quot; bknormalimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2'&quot; bkhotimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner=2,2,2,2'&quot; bkpushedimage=&quot;file='PLAZA_HALL_LIST\VSBAR_BACK.png' corner='2,2,2,2'&quot; bkdisabledimage=&quot;file=''&quot; " />
+	<Default name="ListItemStyle" value="itemhotimage=&quot;file='PLAZA_HALL_LIST\GAME_HOT.png' corner='2,2,2,2'&quot; "/>
+	<Container>
+		<VerticalLayout inset="6,41,0,6">
+			<HorizontalLayout width="208"  height="39" inset="10,16,10,0" bkimage="file='PLAZA_HALL_LIST\LABEL_TITLE_BACK.png' " >
+				<Container width="36" height="14">
+					<Button name="ButtonExpandAll" width="36" height="14" visible="true" statusimage="file='PLAZA_HALL_LIST\BT_TITLE_EXPAND.png' "/>
+					<Button name="ButtonCollapseAll" width="36" height="14" visible="false" statusimage="file='PLAZA_HALL_LIST\BT_TITLE_COLLAPSE.png' "/>
+				</Container>
+				<Control />
+				<Container width="39" height="14">
+					<Button name="ButtonAllGameNum" text="22" textpadding="1,0" align="center" width="39" height="14" statusimage="file='PLAZA_HALL_LIST\BT_TITLE_TOTAL.png' " textcolor="#FFC59356" hottextcolor="#FFE0C39B" pushedtextcolor="#FFC59356"/>
+				</Container>
+			</HorizontalLayout>
+			<VerticalLayout name="HorizontalLayoutUI" inset="7,0,5,7">
+				<ListEx name="HallGameList" auotocollapse="false"  width="200" bkcolor="#00000000" bkimage="file='PLAZA_HALL_LIST\list_bk.png' xtiled='false' ytiled='true'" itemtextcolor="#FFA9A1D7" itemhottextcolor="#FFA9A1D7" itemselectedtextcolor="#FFA9A1D7" itemselectedbkcolor="#00000000" header="hidden" itemshowhtml="true" vscrollbar="true" hscrollbar="false"  vscrollbarstyle="width=&quot;12&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; alwaysvisible=&quot;true&quot;" attributes="ListItemStyle">			
+					<!-- <Include count="4" source="PlazaHallListItemType.xml"/> -->
+				</ListEx>
+			</VerticalLayout>
+		</VerticalLayout>	
+	</Container>
+</Window>

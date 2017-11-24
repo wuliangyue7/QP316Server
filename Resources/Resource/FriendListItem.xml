@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<NodeElement height="20" inset="0,0,0,0">
+		<Label  text="{x 5}{i DLG_BOX_FRIEND\LABEL_VIP.png 5 2}" width="34" showhtml="true" />
+		<Label  text="请叫我赌神" textcolor="#FFFF0000" width="98"/>
+		<Label  text="在线"textcolor="#FF99CC66" />		
+	</NodeElement>
+</Window>

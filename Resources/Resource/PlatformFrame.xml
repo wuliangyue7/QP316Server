@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1024,740" sizebox="5,5,5,5" roundcorner="4,4" caption="0,0,0,40">
+    <VerticalLayout name="HorizontalLayoutUI1" width="1024" height="740" bkimage="file='PLAZA_MAIN\BACK.png'  corner='180,180,180,180' tiled='true'">
+		<Container>
+			<VerticalLayout>
+				<HorizontalLayout name="HLayoutUICaption" height="30">
+					<Control width="8"/>
+					<HorizontalLayout width="147" inset="0,4,0,0">
+						<Label name="LableIcon" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' "/>
+						<VerticalLayout width="123" inset="0,1,0,0">
+						<Label name="LableTitle" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_PLAZA.png' "/>
+						</VerticalLayout>
+					</HorizontalLayout>		
+					<Control />
+					<HorizontalLayout width="355" inset="0,2,0,0">
+						<Button name="ButtonMain" width="71" height="25" statusimage="file='PLAZA_MAIN\PLAZAMENU1.png' "/>
+						<Button name="ButtonLockMachine" width="71" height="25" statusimage="file='PLAZA_MAIN\PLAZAMENU2.png' "/>
+						<Button name="ButtonMySpread" width="71" height="25" statusimage="file='PLAZA_MAIN\PLAZAMENU3.png' "/>
+						<Button name="ButtonHlep" width="71" height="25" statusimage="file='PLAZA_MAIN\PLAZAMENU4.png' "/>
+						<Button name="ButtonMunu" width="71" height="25" statusimage="file='PLAZA_MAIN\PLAZAMENU5.png' " />
+					</HorizontalLayout>
+					<HorizontalLayout width="96">
+						<Button name="ButtonMin" width="32" height="28" statusimage="file='COMM_WIDGET\BT_MIN.png' "/>
+						<Button name="ButtonMax" width="32" height="28" statusimage="file='COMM_WIDGET\BT_MAX.png' "/>
+						<Button name="ButtonResore" width="32" height="28" visible="false" statusimage="file='COMM_WIDGET\BT_RESTORE.png' "/>
+						<Button name="ButtonClose"  width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' "/>
+					</HorizontalLayout>
+				</HorizontalLayout>
+				<Container>
+					<HorizontalLayout> 
+						<Label width="350" height="200" bkimage="file='PLAZA_MAIN\BACK_EFFECT_LEFT.png' "/>
+						<Control />
+						<Label width="260" height="200" bkimage="file='PLAZA_MAIN\BACK_EFFECT_RIGHT.png' "/>
+					</HorizontalLayout>	
+					<HorizontalLayout> 
+						<Label width="300" height="100" bkimage="file='COMM_LOGO\LOGO_300_100.png' "/>
+					</HorizontalLayout>	
+				
+					<VerticalLayout>
+						<Container name="PlazaUserInfo" visible="true" height="84">
+							<Include source="PlazaHallUserInfo.xml"/>
+						</Container>
+						<Container visible="true">
+							<Container name="PlazaHallMain" visible="true">
+								<Include source="PlazaHallMain.xml"/>
+							</Container>
+							<Container name="PlazaRoomMain" visible="false">
+								<Include source="PlazaRoomMain.xml"/>
+							</Container>
+						</Container>			
+					</VerticalLayout>
+					<VerticalLayout mouse="false">
+						<Include source="PlazaHallRealTip.xml"/>
+					</VerticalLayout>
+					
+				</Container>
+			</VerticalLayout>
+			<Label name="Lableshadow"  visible="false" bkimage="file='PLAZA_MAIN\SHADOW.png' "/>
+		</Container>
+    </VerticalLayout>
+</Window>

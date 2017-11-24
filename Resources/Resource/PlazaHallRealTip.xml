@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<HorizontalLayout  mouse="false">
+		<Control mouse="false"/>
+		<VerticalLayout mouse="false" width="48%" maxwidth="580">
+			<Control height="61" mouse="false"/>
+			<Container name="RealTipContainer"  visible="false" width="230" height="116" bkimage="file='PLAZA_HALL_REAL_TIP\LABEL_TIP_BACK.png'">
+				<Button name="RealTipButtonEnter"  width="230" height="116"  statusimage="file='PLAZA_HALL_REAL_TIP\BUTTON_TIP_BACK.png'" />
+				<VerticalLayout height="18" mouse="false" >
+					<Control height="20" mouse="false" />
+					<HorizontalLayout height="14" mouse="false" >
+						<Control mouse="false" />
+						<Button name="RealTipButtonClose"  width="14" height="14"  statusimage="file='PLAZA_HALL_REAL_TIP\BUTTON_CLOSE.png'" />
+						<Control width="15" mouse="false" />
+					</HorizontalLayout>
+					<Control height="6" mouse="false" />
+					<VerticalLayout mouse="false" >
+						<HorizontalLayout mouse="false" height="22">
+							<Control mouse="false" />
+							<Label mouse="false" width="152" height="22" bkimage="file='PLAZA_HALL_REAL_TIP\TIP_SUB_1.png'"/>
+							<Control mouse="false" />
+						</HorizontalLayout>
+						<Control height="6" mouse="false" />
+						<HorizontalLayout mouse="false" height="22">
+							<Control mouse="false" />
+							<VerticalLayout mouse="false" width="87">
+								<Control mouse="false" />
+								<Number mouse="false" name="RealTipNumberAward" num="30000" width="87" height="18" format="0123456789" align="center" numberimage="file='PLAZA_HALL_REAL_TIP\NUMBER.png' " />
+								<Control mouse="false" />
+							</VerticalLayout>
+							<Label mouse="false" width="65" height="22" bkimage="file='PLAZA_HALL_REAL_TIP\TIP_SUB_2.png'"/>
+							<Control mouse="false" />
+						</HorizontalLayout>
+					</VerticalLayout>
+				</VerticalLayout>
+			</Container>
+		</VerticalLayout>
+		<Control mouse="false"/>
+	</HorizontalLayout>
+</Window>

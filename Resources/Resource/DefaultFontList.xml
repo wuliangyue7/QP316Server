@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Fonts>
+    <Font name="宋体" size="12" bold="false" italic="false" default="true" />
+    <Font name="宋体" size="13" bold="false" italic="false" default="false" />
+    <Font name="宋体" size="12" bold="true" italic="false" default="false" />  
+    <Font name="宋体" size="14" bold="true" italic="false" default="false" />	  
+    <Font name="宋体" size="16" bold="true" italic="false" default="false" />
+    <Font name="宋体" size="28" bold="true" italic="false" default="false" />
+    <Font name="宋体" size="14" bold="false" italic="false" default="false" />
+    <Font name="宋体" size="32" bold="true" italic="false" default="false" />
+    <Font name="宋体" size="12" bold="false" italic="false" default="false" />
+</Fonts>

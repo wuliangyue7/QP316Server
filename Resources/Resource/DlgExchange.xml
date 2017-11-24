@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="470,340" sizebox="4,4,6,6" caption="0,0,0,0">
+    <Container name="ContainerUI" pos="145,143,205,173" width="60" height="30" bkcolor="#00000000">
+        <Container name="ContainerUI1" float="true" pos="10,49,232,330" bkimage="file='IMAGE_ROUND_FRAME' corner='6,6,6,6' restype='PNG'">
+            <Label name="LabelUI1" float="true" pos="67,13,137,36" bkimage="file='TEXT_EXCHANGE_INGOT' restype='PNG'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Text name="TextUI1" text="当前元宝：" float="true" pos="16,60,80,73" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI2" text="兑换元宝：" float="true" pos="16,92,80,105" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI3" text="获得游戏币：" float="true" pos="4,122,80,135" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextExchangeRate" text="{a}{f 2}<u><c #00FF0000>1元宝=100金币{/c}</u>{/f}{/a}" float="true" pos="66,172,200,189" textcolor="#00FF0000" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+            <Button name="ButtonConfirmExchange" float="true" pos="71,224,161,254" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" statusimage="file='BT_CONFIRM_EXCHANGE' restype='PNG'"/>
+            <Text name="TextMoreExchange" text="{a}{f 1}<u><c #00FF0000>更多兑换{/c}</u>{/f}{/a}" float="true" pos="150,58,224,74" textcolor="#00FF0000" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+            <Edit name="EditIngotCount" float="true" pos="83,88,206,108" bkcolor="#00000000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file='EDIT_SKIN_NORMAL' corner='3,3,3,3' restype='PNG'"/>
+        </Container>
+        <Container name="ContainerUI2" float="true" pos="239,49,461,330" bkimage="file='IMAGE_ROUND_FRAME' corner='6,6,6,6' restype='PNG'">
+            <Label name="LabelUI2" float="true" pos="70,12,140,35" bkimage="file='TEXT_AS_MEMBER' restype='PNG'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Text name="TextUI4" text="会员类型：" float="true" pos="24,60,88,75" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI5" text="会员时间：" float="true" pos="24,92,88,105" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextTimeUnit" text="个月" float="true" pos="165,93,200,106" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI7" text="消耗游戏豆：" float="true" pos="12,122,88,135" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI19" text="游戏豆" float="true" pos="165,122,210,135" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            <Text name="TextUI8" text="获得游戏币：" float="true" pos="12,154,88,167" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+            <Text name="TextUI20" text="游戏币" float="true" pos="165,154,210,167" textcolor="#00000000" disabledtextcolor="#FFA7A6AA"/>
+            <Button name="ButtonConfirmPurchase" float="true" pos="63,224,153,254" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" statusimage="file='BT_CONFIRM_PAY' restype='PNG'"/>
+	    <Combo name="ComboMemberType" float="true" pos="91,53,167,79" dropboxsize="0,150" dropboxbkColor="#FFFFFFFFF" dropboxborderColor="#FF000000" textpadding="3,0,0,0"itemtextpadding="3,0,0,0"  itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFFFFFFF" itemhottextcolor="#FF000000" itemhotbkcolor="#FF4875A3" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file='COMBO_NORMAL' restype='PNG' corner='3,3,16,3'" hotimage="file='COMBO_HOT' restype='PNG' corner='3,3,16,3'" pushedimage="file='COMBO_PUSHED' restype='PNG' corner='3,3,16,3'"/>
+	    <Edit name="EditPurchaseTime" float="true" pos="91,87,157,108" bkcolor="#00000000" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" normalimage="file='EDIT_SKIN_NORMAL' corner='3,3,3,3' restype='PNG'"/> 	
+        </Container>
+    </Container>
+</Window>

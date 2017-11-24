@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="516,333" sizebox="5,5,5,5" roundcorner="7,7" caption="0,0,0,38">
+    <HorizontalLayout name="HorizontalLayoutUI1" bkimage="file='DLG_BOX_REGISTER\DLG_REGISTER_BACK.png' ">
+        <Label name="LableLOGO" float="true" pos="4,3,28,27" width="24" height="24" bkimage="file='COMM_LOGO\LOGO_24_24.png' " />
+        <Label name="LableTITLE" float="true" pos="26,4,149,26" width="123" height="22" bkimage="file='COMM_TITLE\TITLE_LOGON.png' " />
+        <Button name="ButtonClose" float="true" pos="480,0,512,28" width="32" height="28" statusimage="file='COMM_WIDGET\BT_CLOSE.png' " />
+        <Edit name="EditAccounts" float="true" pos="151,86,373,120" width="222" height="34" textpadding="10,3,10,3" maxchar="31" textcolor="#FFFF9900" font="6" normalimage="file='DLG_BOX_LOGON\LOGON_EDIT_NORMAL.png' " hotimage="file='DLG_BOX_LOGON\LOGON_EDIT_HOT.png' " focusedimage="file='DLG_BOX_LOGON\LOGON_EDIT_FOCUSE.png' " tipvalue="帐号" tipvaluecolor="#FF7F7F7F" />
+        <Label name="LabelAccountsValidate" float="true" pos="385,90,409,115" width="24" height="25" visible="false" bkimage="file='DLG_BOX_REGISTER\IMAGE_RIGHT.png' " />
+        <Text name="LabelAccountsInvalid" float="true" pos="380,90,500,210" width="120" height="120" visible="false" text="" textcolor="#FFFF6600" font="0" />
+        <Text name="LabelAccountsTip" float="true" pos="380,90,500,210" width="120" height="120" visible="false" text="长度为6-31个字符" textcolor="#FF7973AA" font="0" />
+        <Edit name="EditLogonPass" float="true" pos="151,124,373,158" width="222" height="34" textpadding="10,3,8,3" maxchar="26" textcolor="#FFFF9900" font="6" normalimage="file='DLG_BOX_LOGON\LOGON_EDIT_NORMAL.png' " hotimage="file='DLG_BOX_LOGON\LOGON_EDIT_HOT.png' " focusedimage="file='DLG_BOX_LOGON\LOGON_EDIT_FOCUSE.png' " tipvalue="密码" tipvaluecolor="#FF7F7F7F" password="true" eyestatusimage="DLG_BOX_LOGON\BT_EDIT_EYE.png" />
+        <Label name="LabelLogonPassValidate" float="true" pos="385,128,409,153" width="24" height="25" visible="false" bkimage="file='DLG_BOX_REGISTER\IMAGE_RIGHT.png' " />
+        <Text name="LabelLogonPassInvalid" float="true" pos="380,128,500,320" width="120" height="120" visible="false" textcolor="#FFFF6600" />
+        <Text name="LabelLogonPassTip" float="true" pos="380,128,500,320" width="120" height="120" visible="false" text="6-26个英文字母，数字，下划线组合"  textcolor="#FF7973AA" />
+        <PowerScale name="PowerScaleUIPass" float="true" pos="151,169,373,177" width="222" height="8" bkimage="file='DLG_BOX_REGISTER\CPOWERSCALEUI_REGISTER_BACK.png' " fgimage="file='DLG_BOX_REGISTER\CPOWERSCALEUI_REGISTER_PROGRESS.png' " level="0" />
+        <Edit name="EditValidateCode" float="true" pos="151,186,259,220" width="108" height="34" textpadding="10,3,10,3" maxchar="2" textcolor="#FFFF9900" font="6" normalimage="file='DLG_BOX_REGISTER\REGISTER_EDIT_VERIFYCODE_NORMAL.png' " hotimage="file='DLG_BOX_REGISTER\REGISTER_EDIT_VERIFYCODE_HOT.png' " focusedimage="file='DLG_BOX_REGISTER\REGISTER_EDIT_VERIFYCODE_FOCUSE.png' " tipvalue="验证码" tipvaluecolor="#FF7F7F7F" />
+        <VerifyCode name="Verifycode" float="true" pos="268,186,373,218" width="105" height="32" bkimage="file='DLG_BOX_REGISTER\REGISTER_VERIFYCOD_BACK.png' " maxheight="32" textpadding="12,2,1,2" textcolor="#FFFFFFFE" font="5" format="0123456789+=?" numberimage="file='DLG_BOX_REGISTER\VERIFYCODE_NUMBER.png' "/>
+        <Button name="ButtonRefresh" float="true" pos="268,186,373,218"  />
+        <Label name="LableAgree" float="true" pos="183,231,271,247" bkimage="file='DLG_BOX_REGISTER\REGISTER_AGREE.png' " autosize="true" />
+        <CheckButton name="CheckButtonAgree" float="true" pos="157,228,271,250" checked="true" textpadding="22,0,0,0" normalstatusimage="file='DLG_BOX_LOGON\LOGON_UNCHECK.png'" checkedstatusimage="file='DLG_BOX_LOGON\LOGON_CHECKED.png'" />
+        <Button name="ButtonArticle" float="true" pos="273,231,389,247" statusimage="file='DLG_BOX_REGISTER\BT_ARTILE.png' " />
+        <Button name="ButtonRegister" float="true" pos="139,256,367,310" statusimage="file='DLG_BOX_REGISTER\BT_REGISTER_ENTER.png' " />
+    </HorizontalLayout>
+</Window>

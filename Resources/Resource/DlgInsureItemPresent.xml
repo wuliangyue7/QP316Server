@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<VerticalLayout name="InsureItemPresent" >
+		<VerticalLayout>
+			<Control />
+			<HorizontalLayout height="270"> 
+				<Control width="10"/>
+				<VerticalLayout width="190" >
+					<Control height="20"/>
+					<HorizontalLayout height="77">
+						<Control />
+						<Control width="71" height="77" bkimage="file='DLG_BOX_INSURE\USERINSURE.png' "/>
+						<Control />
+					</HorizontalLayout>
+					<Label text="银行存款" height="20" align="center" font="3" textcolor="#FFFFCC99" />
+					<Number name="NumberPresentUserInsrue"  height="20" num="123456789" seg="true" align="center" textcolor="#FFFFCC00" font="4" />
+					<Control height="10" />
+					<VerticalLayout name="VerticalLayoutRebate" height="45" visible="false" >
+						<HorizontalLayout height="20">
+							<Control width="60" />
+							<Label text="返利元宝:" height="20" width="60" align="right" textcolor="#FFFFCC99" />
+							<Label name="LabelRebateIngot" text="100" height="20" align="left" textcolor="#FFFFCC99" />
+							<Control />
+						</HorizontalLayout>		
+						<Control height="5" />
+						<HorizontalLayout height="20">
+							<Control width="60" />
+							<Label text="返利魅力:" height="20" width="60" align="right" textcolor="#FFFFCC99" />
+							<Label name="LabelRebateLoveLiness" text="100" height="20" align="left" textcolor="#FFFFCC99" />
+						</HorizontalLayout>	
+					</VerticalLayout> 	
+					<Control />
+				</VerticalLayout> 
+				<Control width="10"/>
+				<VerticalLayout >
+					<HorizontalLayout height="20" > 
+						<Control width="90" />
+						<RadioButton name="RadioButtonPresentID"  textpadding="24,0,0,0"  height="20" width="100" grouped="true" groupid="1" font="3" textcolor="#FFFFCC99" text=" 依据ID" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png' " checked="true" visible="false"/>
+						<Control width="20"/>
+						<RadioButton name="RadioButtonPresentNick" textpadding="24,0,0,0" height="20" width="100" grouped="true" groupid="1" font="3" textcolor="#FFFFCC99" text=" 依据昵称" normalstatusimage="file='COMM_WIDGET\RADIO_NORMAL.png' " checkedstatusimage="file='COMM_WIDGET\RADIO_SELECTED.png'" visible="false"/>
+					</HorizontalLayout>
+					<Control height="3"/>
+					<HorizontalLayout height="34">
+						<Container>
+							<HorizontalLayout name="HLayoutPresentID">
+								<Label name="LabelPresentID" text="接收I D：" width="90" font="3" align="right" textcolor="#FFFFCC99" />
+								<Edit name="EditPresentID" width="222" text="" numonly="true" font="3" textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' "/>					
+							</HorizontalLayout>
+						</Container>
+					</HorizontalLayout>
+					<Control height="3"/>
+					<Label name="LabelPresentChineseNumeral" text="" font="3" textcolor="#FFFF6600" align="left"/>
+					<Control height="3"/>
+					<HorizontalLayout height="34">
+						<Label text="赠送金额：" width="90" font="3" align="right" textcolor="#FFFFCC99" />
+						<Edit name="EditPresentAmount" width="222" numonly="true" seg="true" maxchar="16" text="" font="3" textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' "/>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="34">
+						<Label text="银行密码：" width="90" font="3" align="right" textcolor="#FFFFCC99" />
+						<Edit name="EditPresentInsurePassWord" width="222" font="3" password="true" textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " eyestatusimage="COMM_WIDGET\EDIT_BT_EYE.png"/>
+					</HorizontalLayout>
+					<Control height="10"/>
+					<HorizontalLayout height="34">
+						<Label text="备注说明：" width="90" font="3" align="right" textcolor="#FFFFCC99" />
+						<Edit name="EditPresentBak" width="222" text="" font="3" textpadding="8,3,4,3" textcolor="#FFFFCC00" bkcolor="#00000000" normalimage="file='COMM_WIDGET\EDIT_NOR_S.png' corner='8,8,8,8' " hotimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' " focusedimage="file='COMM_WIDGET\EDIT_HOT_S.png' corner='8,8,8,8' "/>
+					</HorizontalLayout>
+					<Control height="20"/>
+					<HorizontalLayout height="37">
+						<Control width="150"/>
+						<Button name="ButtonPresent" width="104" height="37" statusimage="file='DLG_BOX_INSURE\BT_CONFIRM.png' " />
+						<Control />
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+				<Control width="20"/>
+			</HorizontalLayout>
+			<Control />
+		</VerticalLayout>
+		<Control height="5"/>
+		<Control width="720" height="2" bkimage="file='COMM_WIDGET\LABEL_LINE_720_2.png' "/>
+		<Control height="10"/>
+		<HorizontalLayout height="38"> 
+			<Control width="20"/>
+			<Text name="TextTransferTax" width="300" height="38" valign="center"  textcolor="#FF875D38" linespace="5" text="提示：普通玩家游戏币赠送需扣除5‰的手续费。" />
+			<VerticalLayout inset="0,0,0,0">
+				<Control />
+				<HorizontalLayout name="ContainerVipAward" height="15" inset="0,0,0,0">
+					<Container width="15" height="15">						
+						<Label name="LabelVipLevel0" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='0,0,15,15'"/>
+						<Label name="LabelVipLevel1" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='15,0,30,15'"/>
+						<Label name="LabelVipLevel2" visible="true"  bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='30,0,45,15'"/>
+						<Label name="LabelVipLevel3" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='45,0,60,15'"/>
+						<Label name="LabelVipLevel4" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='60,0,75,15'"/>
+						<Label name="LabelVipLevel5" visible="false" bkimage="file='COMM_WIDGET\LABEL_VIP_M.png' source='75,0,90,15'"/>	
+					</Container>
+					<Label name="LabelMemberTax" text="扣除1%手续费。" textpadding="4,0,0,0"  textcolor="#FFC91E1E"/>	
+					<Label name="LabelMemberTaxFree" text="免手续费" visible="false" textpadding="4,0,0,0"  textcolor="#FF00FF00"/>
+				</HorizontalLayout>	
+				<Control />
+			</VerticalLayout>			
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>
