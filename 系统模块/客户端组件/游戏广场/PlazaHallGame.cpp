@@ -685,21 +685,25 @@ bool CPlazaHallGame::LoadDataFromMemory()
 	vector<CGameKindItem *> vGameKind;
 	vector<CGameKindItem *>::iterator itGameKind;
 	vector<CGameServerItem *>::iterator itGameServer;
+	bool bFind = false;
 	//¼ÓÔØÀàÐÍ
 	while (true)
 	{
 		pGameKindItem=pServerListData->EmunGameKindItem(Position);
 		if (pGameKindItem==NULL) break;
+		bFind = false;
 		for (itGameKind = m_vGameKind.begin();itGameKind!=m_vGameKind.end();itGameKind++)
 		{
 			CGameKindItem * pGameKindTemp= (CGameKindItem *)(*itGameKind);
 			if (pGameKindItem->m_GameKind.wSortID<=pGameKindTemp->m_GameKind.wSortID)
 			{
 				m_vGameKind.insert(itGameKind,pGameKindItem);
+				bFind = true;
 				break;
 			}
 		}
-		if (itGameKind==m_vGameKind.end()) m_vGameKind.push_back(pGameKindItem);
+		//if (itGameKind == m_vGameKind.end()) m_vGameKind.push_back(pGameKindItem);
+		if (!bFind) m_vGameKind.push_back(pGameKindItem);
 		if (Position==NULL) break;
 	}
 
@@ -708,6 +712,7 @@ bool CPlazaHallGame::LoadDataFromMemory()
 	{
 		pGameKindItem=pServerListData->EmunGameKindItem(Position);
 		if (pGameKindItem==NULL) break;
+		bFind = false;
 		if(pGameKindItem->m_GameKind.wRecommend == 1)
 		{
 			for (itGameKind = m_vAdGameKind.begin();itGameKind!=m_vAdGameKind.end();itGameKind++)
@@ -716,10 +721,12 @@ bool CPlazaHallGame::LoadDataFromMemory()
 				if (pGameKindItem->m_GameKind.wSortID<=pGameKindTemp->m_GameKind.wSortID)
 				{
 					m_vAdGameKind.insert(itGameKind,pGameKindItem);
+					bFind = true;
 					break;
 				}
 			}
-			if (itGameKind==m_vAdGameKind.end()) m_vAdGameKind.push_back(pGameKindItem);
+			if (itGameKind == m_vAdGameKind.end()) m_vAdGameKind.push_back(pGameKindItem);
+			if (!bFind) m_vAdGameKind.push_back(pGameKindItem);
 		}
 		if (Position==NULL) break;
 	}
@@ -729,16 +736,19 @@ bool CPlazaHallGame::LoadDataFromMemory()
 	{
 		pGameServerItem=pServerListData->EmunGameServerItem(Position);
 		if (pGameServerItem==NULL) break;
+		bFind = false;
 		for (itGameServer = m_vGameServer.begin();itGameServer!=m_vGameServer.end();itGameServer++)
 		{
 			CGameServerItem * pGameServerTemp= (CGameServerItem *)(*itGameServer);
 			if (pGameServerItem->m_GameServer.wSortID<=pGameServerTemp->m_GameServer.wSortID)
 			{
 				m_vGameServer.insert(itGameServer,pGameServerItem);
+				bFind = true;
 				break;
 			}
 		}
-		if (itGameServer==m_vGameServer.end()) m_vGameServer.push_back(pGameServerItem);
+		//if (itGameServer == m_vGameServer.end()) m_vGameServer.push_back(pGameServerItem);
+		if (!bFind) m_vGameServer.push_back(pGameServerItem);
 		if (Position==NULL) break;
 	}
 
