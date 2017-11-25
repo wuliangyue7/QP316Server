@@ -88,10 +88,10 @@
     <TargetName>KernelEngineD</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
-    <OutDir>..\..\..\运行\Release\Unicode\</OutDir>
+    <OutDir>../../../运行/Release/Unicode/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>$(ProjectName)</TargetName>
+    <TargetName>KernelEngine</TargetName>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -212,7 +212,7 @@ copy /y ..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\服务
     </ClCompile>
     <Link>
       <AdditionalDependencies>../../链接库/Unicode/ServiceCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>../../运行/Release/Unicode/KernelEngine.dll</OutputFile>
+      <OutputFile>../../../运行/Release/Unicode/KernelEngine.dll</OutputFile>
       <ModuleDefinitionFile>.\KernelEngine.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -226,8 +226,9 @@ copy /y ..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\服务
       <MkTypLibCompatible>false</MkTypLibCompatible>
     </Midl>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>echo ..\..\..\发布组件\服务器组件\Release\Unicode\$(TargetFileName)
+mkdir ..\..\..\发布组件\服务器组件\Release\Unicode
+copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\服务器组件\Release\Unicode\$(TargetFileName)</Command>
     </PostBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

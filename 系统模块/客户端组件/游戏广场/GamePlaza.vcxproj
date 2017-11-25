@@ -97,9 +97,10 @@
     <TargetName>GamePlaza</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
-    <OutDir>$(Configuration)\</OutDir>
+    <OutDir>../../../运行/Release/Unicode/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>GamePlaza</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Manager|Win32'">
     <OutDir>$(Configuration)\</OutDir>

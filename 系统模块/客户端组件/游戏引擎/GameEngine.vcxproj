@@ -85,7 +85,7 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">../../../运行/Debug/Unicode/</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">../../../运行/Release/Unicode/</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">false</LinkIncremental>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
@@ -118,6 +118,9 @@
     <LibraryPath>C:\Users\Administrator\Desktop\临安十三道\游来十三水 服务端\游来十三水\Direct9\Lib;C:\Direct9\Lib;$(LibraryPath)</LibraryPath>
     <TargetName>GameEngine</TargetName>
     <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <TargetName>GameEngine</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -204,7 +207,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(TargetPath)</OutputFile>
+      <OutputFile>../../../运行/Debug/Unicode/GameEngineD.dll</OutputFile>
       <ModuleDefinitionFile>.\GameEngineD.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -239,15 +242,20 @@ copy /y ..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\发布组件\�
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>../bin/GameEngine_u.DLL</OutputFile>
-      <ModuleDefinitionFile>.\GameEngine_u.def</ModuleDefinitionFile>
+      <OutputFile>../../../运行/Release/Unicode/GameEngine.dll</OutputFile>
+      <ModuleDefinitionFile>.\GameEngine.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <ImportLibrary>../Lib/GameEngine_u.lib</ImportLibrary>
+      <ImportLibrary>../../链接库/Unicode/GameEngine.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
