@@ -78,9 +78,10 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
-    <OutDir>$(Configuration)\</OutDir>
+    <OutDir>../../../../运行/Release/Unicode/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>OxSixExClientControl</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
     <OutDir>../../../../运行/Debug/Unicode/</OutDir>
@@ -181,9 +182,8 @@ copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组�
       <MkTypLibCompatible>false</MkTypLibCompatible>
     </Midl>
     <PostBuildEvent>
-      <Command>
-mkdir ..\..\..\发布组件\客户端组件\Release\Unicode\
-copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Unicode\
+copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
 </Command>
     </PostBuildEvent>
     <ResourceCompile>
@@ -218,7 +218,7 @@ copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组�
     </Midl>
     <PostBuildEvent>
       <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Unicode
-copy /y ..\..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Unicode\$(TargetFileName)
+copy /y ..\..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\..\发布组件\客户端组件\Debug\Unicode\$(TargetFileName)
 </Command>
     </PostBuildEvent>
     <ResourceCompile>

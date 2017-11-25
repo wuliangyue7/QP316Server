@@ -84,9 +84,10 @@
     <TargetName>OxSixExServerControl</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
-    <OutDir>$(Configuration)\</OutDir>
+    <OutDir>../../../../运行/Release/Unicode/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <TargetName>OxSixExServerControl</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -183,7 +184,7 @@ copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组�
     </Midl>
     <PostBuildEvent>
       <Command>mkdir ..\..\..\发布组件\服务器组件\Debug\Unicode
-copy /y ..\..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\发布组件\服务器组件\Debug\Unicode\$(TargetFileName)
+copy /y ..\..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\..\发布组件\服务器组件\Debug\Unicode\$(TargetFileName)
 </Command>
     </PostBuildEvent>
     <ResourceCompile>
@@ -217,7 +218,7 @@ copy /y ..\..\..\..\运行\Debug\Unicode\$(TargetFileName) ..\..\..\发布组件
     </Midl>
     <PostBuildEvent>
       <Command>mkdir ..\..\..\发布组件\服务器组件\Release\Unicode\
-copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\服务器组件\Release\Unicode\$(TargetFileName)
+copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\..\发布组件\服务器组件\Release\Unicode\$(TargetFileName)
 </Command>
     </PostBuildEvent>
     <ResourceCompile>
